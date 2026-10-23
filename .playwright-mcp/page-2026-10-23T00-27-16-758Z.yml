@@ -1,0 +1,373 @@
+- generic [active] [ref=f10e1]:
+  - generic [ref=f10e2]:
+    - banner [ref=f10e3]:
+      - navigation "Principal" [ref=f10e4]:
+        - link "Constructora P.G" [ref=f10e5] [cursor=pointer]:
+          - /url: "#top"
+        - link "Cotiza" [ref=f10e7] [cursor=pointer]:
+          - /url: "#cotiza"
+      - generic [ref=f10e9]:
+        - link "Servicios" [ref=f10e10] [cursor=pointer]:
+          - /url: "#servicios"
+        - link "Cómo trabajamos" [ref=f10e11] [cursor=pointer]:
+          - /url: "#como"
+        - link "Proyectos" [ref=f10e12] [cursor=pointer]:
+          - /url: "#proyectos"
+        - link "Precios" [ref=f10e13] [cursor=pointer]:
+          - /url: "#precios"
+        - link "FAQ" [ref=f10e14] [cursor=pointer]:
+          - /url: "#faq"
+    - main [ref=f10e15]:
+      - region [ref=f10e16]:
+        - generic [ref=f10e17]:
+          - generic [ref=f10e18]:
+            - heading "Plano. Obra. Entrega." [level=1] [ref=f10e19]:
+              - generic [ref=f10e20]: Plano.
+              - generic [ref=f10e22]: Obra.
+              - generic [ref=f10e24]: Entrega.
+            - paragraph [ref=f10e27]:
+              - text: Arquitectura, construcción y mantención con un único responsable —
+              - strong [ref=f10e28]: del plano a la entrega, sin intermediarios
+              - text: . Precios reales publicados en UF, pago en cuotas y garantía que no termina con la entrega.
+            - generic [ref=f10e30]:
+              - link "Cotiza tu proyecto" [ref=f10e31] [cursor=pointer]:
+                - /url: "#cotiza"
+              - link "Ver proyectos" [ref=f10e32] [cursor=pointer]:
+                - /url: "#proyectos"
+          - 'img "Plano axonométrico que se dibuja solo: el proyecto pasa de líneas a volumen azul" [ref=f10e35]':
+            - generic [ref=f10e51]:
+              - generic [ref=f10e52]: P-00 · PROYECTO INTEGRAL
+              - generic [ref=f10e53]: ESC 1:100 · SANTIAGO, CL
+              - generic [ref=f10e54]: CONSTRUCTORA P.G
+            - generic [ref=f10e55]:
+              - generic [ref=f10e56]: 12 000
+              - generic [ref=f10e57]: 5 600
+        - list [ref=f10e59]:
+          - listitem [ref=f10e60]: Quinchos 6–12 sem
+          - listitem [ref=f10e62]: Cocinas 6–10 sem
+          - listitem [ref=f10e64]: Remodelaciones 8–20 sem
+          - listitem [ref=f10e66]: Casas 12–18 meses
+          - listitem [ref=f10e68]: Cuotas con Transbank
+          - listitem [ref=f10e70]: Garantía 3/5/10 años
+      - generic [ref=f10e73]:
+        - generic [ref=f10e74]:
+          - generic [ref=f10e75]:
+            - generic [ref=f10e76]: Arquitectura y diseño
+            - generic [ref=f10e77]: ·
+          - generic [ref=f10e78]:
+            - generic [ref=f10e79]: Quinchos y terrazas
+            - generic [ref=f10e80]: ·
+          - generic [ref=f10e81]:
+            - generic [ref=f10e82]: Cocinas integrales
+            - generic [ref=f10e83]: ·
+          - generic [ref=f10e84]:
+            - generic [ref=f10e85]: Construcción de casas
+            - generic [ref=f10e86]: ·
+          - generic [ref=f10e87]:
+            - generic [ref=f10e88]: Remodelaciones
+            - generic [ref=f10e89]: ·
+          - generic [ref=f10e90]:
+            - generic [ref=f10e91]: Mantención
+            - generic [ref=f10e92]: ·
+          - generic [ref=f10e93]:
+            - generic [ref=f10e94]: Portones y accesos
+            - generic [ref=f10e95]: ·
+          - generic [ref=f10e96]:
+            - generic [ref=f10e97]: Precios reales en UF
+            - generic [ref=f10e98]: ·
+          - generic [ref=f10e99]:
+            - generic [ref=f10e100]: Cuotas con Transbank
+            - generic [ref=f10e101]: ·
+        - generic [ref=f10e102]:
+          - generic [ref=f10e103]:
+            - generic [ref=f10e104]: Arquitectura y diseño
+            - generic [ref=f10e105]: ·
+          - generic [ref=f10e106]:
+            - generic [ref=f10e107]: Quinchos y terrazas
+            - generic [ref=f10e108]: ·
+          - generic [ref=f10e109]:
+            - generic [ref=f10e110]: Cocinas integrales
+            - generic [ref=f10e111]: ·
+          - generic [ref=f10e112]:
+            - generic [ref=f10e113]: Construcción de casas
+            - generic [ref=f10e114]: ·
+          - generic [ref=f10e115]:
+            - generic [ref=f10e116]: Remodelaciones
+            - generic [ref=f10e117]: ·
+          - generic [ref=f10e118]:
+            - generic [ref=f10e119]: Mantención
+            - generic [ref=f10e120]: ·
+          - generic [ref=f10e121]:
+            - generic [ref=f10e122]: Portones y accesos
+            - generic [ref=f10e123]: ·
+          - generic [ref=f10e124]:
+            - generic [ref=f10e125]: Precios reales en UF
+            - generic [ref=f10e126]: ·
+          - generic [ref=f10e127]:
+            - generic [ref=f10e128]: Cuotas con Transbank
+            - generic [ref=f10e129]: ·
+      - region [ref=f10e130]:
+        - generic [ref=f10e131]:
+          - generic [ref=f10e132]:
+            - heading "Lo que hacemos, de punta a punta" [level=2] [ref=f10e134]
+            - paragraph [ref=f10e136]: "Cuatro familias de servicio bajo la misma firma: quién diseña tu proyecto es quien lo construye y quien responde por él después."
+          - generic [ref=f10e137]:
+            - article [ref=f10e139]:
+              - generic [ref=f10e140]: FAM-A
+              - generic [ref=f10e145]:
+                - heading "Arquitectura y diseño" [level=3] [ref=f10e146]
+                - paragraph [ref=f10e147]: Proyectos de autor listos para construirse, sin improvisación. Diagnóstico, anteproyecto, planimetría constructiva y permisos.
+              - list [ref=f10e148]:
+                - listitem [ref=f10e149]: Casas nuevas
+                - listitem [ref=f10e150]: Ampliaciones
+                - listitem [ref=f10e151]: Remodelaciones integrales
+                - listitem [ref=f10e152]: Locales y oficinas
+                - listitem [ref=f10e153]: Consultoría
+            - article [ref=f10e155]:
+              - generic [ref=f10e156]: FAM-B
+              - generic [ref=f10e161]:
+                - heading "Construcción y obra" [level=3] [ref=f10e162]
+                - paragraph [ref=f10e163]: "El corazón del negocio: quinchos y terrazas, cocinas integrales, casas y todo lo que exige hormigón, estructura y terminación en obra."
+              - list [ref=f10e164]:
+                - listitem [ref=f10e165]: Quinchos y terrazas
+                - listitem [ref=f10e166]: Cocinas integrales
+                - listitem [ref=f10e167]: Obras menores y gruesa
+                - listitem [ref=f10e168]: Losas y radieres
+                - listitem [ref=f10e169]: Cobertizos y pérgolas
+            - article [ref=f10e171]:
+              - generic [ref=f10e172]: FAM-C
+              - generic [ref=f10e177]:
+                - heading "Reparación y mantención" [level=3] [ref=f10e178]
+                - paragraph [ref=f10e179]: "La casa y el local siempre en pie: pintura, cerámicas, instalaciones sanitarias y eléctricas con certificaciones, incluyendo emergencias."
+              - list [ref=f10e180]:
+                - listitem [ref=f10e181]: Pinturas
+                - listitem [ref=f10e182]: Cerámicas y porcelanatos
+                - listitem [ref=f10e183]: Gasfitería
+                - listitem [ref=f10e184]: Electricidad
+                - listitem [ref=f10e185]: Techumbres y canaletas
+                - listitem [ref=f10e186]: Carpintería
+            - article [ref=f10e188]:
+              - generic [ref=f10e189]: FAM-D
+              - generic [ref=f10e194]:
+                - heading "Seguridad y accesos" [level=3] [ref=f10e195]
+                - paragraph [ref=f10e196]: "Ven, identifícate y entra sin fricción: portones automáticos, control de accesos, cámaras y cierres, con soldadura estructural a medida."
+              - list [ref=f10e197]:
+                - listitem [ref=f10e198]: Portones automáticos
+                - listitem [ref=f10e199]: Control de accesos
+                - listitem [ref=f10e200]: Circuito de cámaras
+                - listitem [ref=f10e201]: Cierres perimetrales
+                - listitem [ref=f10e202]: Soldadura estructural
+      - region [ref=f10e203]:
+        - generic [ref=f10e205]:
+          - heading "Así evitamos errores en tu obra" [level=2] [ref=f10e207]
+          - list [ref=f10e208]:
+            - listitem [ref=f10e209]:
+              - generic [ref=f10e210]:
+                - paragraph [ref=f10e211]: "01"
+                - heading "Conversación" [level=3] [ref=f10e212]
+                - paragraph [ref=f10e213]: Nos cuentas qué proyecto tienes en mente. Sin formularios largos ni intermediarios.
+            - listitem [ref=f10e214]:
+              - generic [ref=f10e215]:
+                - paragraph [ref=f10e216]: "02"
+                - heading "Diseño y cotización" [level=3] [ref=f10e217]
+                - paragraph [ref=f10e218]: Diagnóstico para evitar errores antes de construir; presupuesto con costos propios de obra y cuotas opcionales.
+            - listitem [ref=f10e219]:
+              - generic [ref=f10e220]:
+                - paragraph [ref=f10e221]: "03"
+                - heading "Construcción" [level=3] [ref=f10e222]
+                - paragraph [ref=f10e223]: Ejecución con control técnico, permisos municipales gestionados y supervisión en terreno.
+            - listitem [ref=f10e224]:
+              - generic [ref=f10e225]:
+                - paragraph [ref=f10e226]: "04"
+                - heading "Entrega y garantía" [level=3] [ref=f10e227]
+                - paragraph [ref=f10e228]: Plazos claros y sin sorpresas. La garantía legal (3/5/10 años) y nuestro propio compromiso de seguir respondiendo.
+      - region [ref=f10e229]:
+        - generic [ref=f10e230]:
+          - generic [ref=f10e231]:
+            - heading "Obra construida, lámina por lámina" [level=2] [ref=f10e233]
+            - paragraph [ref=f10e235]: Nueve obras con nombre, programa y comuna. Las fotografías reales de cada una se integran en la próxima etapa; la lámina ya te dice qué es.
+          - list [ref=f10e236]:
+            - listitem [ref=f10e237]:
+              - article [ref=f10e239]:
+                - generic [ref=f10e240]:
+                  - generic [ref=f10e241]: P-01
+                  - generic [ref=f10e242]: Quincho
+                - generic [ref=f10e243]:
+                  - heading "Isabel la Católica" [level=3] [ref=f10e244]
+                  - paragraph [ref=f10e245]: Las Condes
+            - listitem [ref=f10e246]:
+              - article [ref=f10e248]:
+                - generic [ref=f10e249]:
+                  - generic [ref=f10e250]: P-02
+                  - generic [ref=f10e251]: Quincho
+                - generic [ref=f10e252]:
+                  - heading "Candelaria" [level=3] [ref=f10e253]
+                  - paragraph [ref=f10e254]: Vitacura
+            - listitem [ref=f10e255]:
+              - article [ref=f10e257]:
+                - generic [ref=f10e258]:
+                  - generic [ref=f10e259]: P-03
+                  - generic [ref=f10e260]: Quincho
+                - generic [ref=f10e261]:
+                  - heading "Río Lahn" [level=3] [ref=f10e262]
+                  - paragraph [ref=f10e263]: Chicureo
+            - listitem [ref=f10e264]:
+              - article [ref=f10e266]:
+                - generic [ref=f10e267]:
+                  - generic [ref=f10e268]: P-04
+                  - generic [ref=f10e269]: Cocina
+                - generic [ref=f10e270]:
+                  - heading "Basel" [level=3] [ref=f10e271]
+                  - paragraph [ref=f10e272]: Lo Barnechea
+            - listitem [ref=f10e273]:
+              - article [ref=f10e275]:
+                - generic [ref=f10e276]:
+                  - generic [ref=f10e277]: P-05
+                  - generic [ref=f10e278]: Cocina
+                - generic [ref=f10e279]:
+                  - heading "María Monvel" [level=3] [ref=f10e280]
+                  - paragraph [ref=f10e281]: La Reina
+            - listitem [ref=f10e282]:
+              - article [ref=f10e284]:
+                - generic [ref=f10e285]:
+                  - generic [ref=f10e286]: P-06
+                  - generic [ref=f10e287]: Cocina
+                - generic [ref=f10e288]:
+                  - heading "Remodelación de baño" [level=3] [ref=f10e289]
+                  - paragraph [ref=f10e290]: Vitacura
+            - listitem [ref=f10e291]:
+              - article [ref=f10e293]:
+                - generic [ref=f10e294]:
+                  - generic [ref=f10e295]: P-07
+                  - generic [ref=f10e296]: Arquitectura y obra
+                - generic [ref=f10e297]:
+                  - heading "Sabores del Patio" [level=3] [ref=f10e298]
+                  - paragraph [ref=f10e299]: Providencia
+            - listitem [ref=f10e300]:
+              - article [ref=f10e302]:
+                - generic [ref=f10e303]:
+                  - generic [ref=f10e304]: P-08
+                  - generic [ref=f10e305]: Exteriores
+                - generic [ref=f10e306]:
+                  - heading "Piscina con deck" [level=3] [ref=f10e307]
+                  - paragraph [ref=f10e308]: Lampa
+            - listitem [ref=f10e309]:
+              - article [ref=f10e311]:
+                - generic [ref=f10e312]:
+                  - generic [ref=f10e313]: P-09
+                  - generic [ref=f10e314]: Accesos
+                - generic [ref=f10e315]:
+                  - heading "Cierre perimetral" [level=3] [ref=f10e316]
+                  - paragraph [ref=f10e317]: Condominio Las Pircas
+      - region [ref=f10e318]:
+        - generic [ref=f10e319]:
+          - generic [ref=f10e320]:
+            - heading "Precios de referencia, en UF" [level=2] [ref=f10e322]
+            - paragraph [ref=f10e324]: "Publicamos el rango real de cada obra: la transparencia es el estándar de la casa. El valor final se fija en la cotización según los antecedentes de tu proyecto."
+          - table [ref=f10e327]:
+            - rowgroup [ref=f10e328]:
+              - row [ref=f10e329]:
+                - columnheader "Servicio" [ref=f10e330]
+                - columnheader "Desde" [ref=f10e331]
+            - rowgroup [ref=f10e332]:
+              - row [ref=f10e333]:
+                - cell "Quincho estándar" [ref=f10e334]
+                - cell "20–25 UF/m²" [ref=f10e335]
+              - row [ref=f10e336]:
+                - cell "Quincho nivel alto" [ref=f10e337]
+                - cell "40 UF/m²" [ref=f10e338]
+              - row [ref=f10e339]:
+                - cell "Remodelación de cocina" [ref=f10e340]
+                - cell "150–300 UF" [ref=f10e341]
+              - row [ref=f10e342]:
+                - cell "Construcción de casa" [ref=f10e343]
+                - cell "25–40 UF/m²" [ref=f10e344]
+              - row [ref=f10e345]:
+                - cell "Habilitación de oficina" [ref=f10e346]
+                - cell "6–8 UF/m²" [ref=f10e347]
+              - row [ref=f10e348]:
+                - cell "Diseño de arquitectura" [ref=f10e349]
+                - cell "1 UF/m²" [ref=f10e350]
+              - row [ref=f10e351]:
+                - cell "Mantención y reparaciones" [ref=f10e352]
+                - cell "A cotizar" [ref=f10e353]
+          - paragraph [ref=f10e355]:
+            - text: Precios netos, en UF ·
+            - link "Solicita tu cotización" [ref=f10e356] [cursor=pointer]:
+              - /url: "#cotiza"
+      - region [ref=f10e357]:
+        - generic [ref=f10e359]:
+          - heading "Lo que preguntan antes de cotizar" [level=2] [ref=f10e361]
+          - generic [ref=f10e363]:
+            - generic [ref=f10e364]:
+              - heading [level=3] [ref=f10e365]:
+                - button "¿Hacen solo diseño o también construyen?" [expanded] [ref=f10e366]
+              - region "¿Hacen solo diseño o también construyen?" [ref=f10e370]:
+                - paragraph [ref=f10e372]: Ambos. La mayoría de los proyectos integran diseño y obra bajo el mismo equipo; en otros desarrollamos el proyecto de arquitectura y el mandante construye con su propia constructora. En cada proyecto del portafolio se indica el alcance real.
+            - generic [ref=f10e373]:
+              - heading [level=3] [ref=f10e374]:
+                - button "¿Cuánto demora cada obra?" [ref=f10e375]
+              - region "¿Cuánto demora cada obra?":
+                - paragraph [ref=f10e380]: "Quinchos 6–12 semanas; cocinas 6–10; remodelaciones 8–20; casas 12–18 meses. El permiso municipal es variable: en el mejor caso parte a los 3 meses."
+            - generic [ref=f10e381]:
+              - heading [level=3] [ref=f10e382]:
+                - button "¿Cuánto cuesta?" [ref=f10e383]
+              - region "¿Cuánto cuesta?":
+                - paragraph [ref=f10e388]: Publicamos los precios de referencia en UF más arriba; el valor final se fija en la cotización sobre los antecedentes de tu proyecto.
+            - generic [ref=f10e389]:
+              - heading [level=3] [ref=f10e390]:
+                - button "¿Se puede pagar en cuotas?" [ref=f10e391]
+              - region "¿Se puede pagar en cuotas?":
+                - paragraph [ref=f10e396]: Sí. Todos los proyectos se pueden pagar en cuotas con Transbank, desde la cotización.
+            - generic [ref=f10e397]:
+              - heading [level=3] [ref=f10e398]:
+                - button "¿Se ocupan de los permisos?" [ref=f10e399]
+              - region "¿Se ocupan de los permisos?":
+                - paragraph [ref=f10e404]: Sí, gestionamos el permiso municipal completo. El trámite se cobra aparte, con un mínimo desde 30 UF por proceso.
+            - generic [ref=f10e405]:
+              - heading [level=3] [ref=f10e406]:
+                - button "¿Qué garantía tiene la obra?" [ref=f10e407]
+              - region "¿Qué garantía tiene la obra?":
+                - paragraph [ref=f10e412]: "Por ley (Art. 18 LGUC): 3 años en terminaciones, 5 en instalaciones y 10 en estructura. Y nuestro compromiso no termina ahí: si nos llamas después de los 3 años, respondemos igual."
+            - generic [ref=f10e413]:
+              - heading [level=3] [ref=f10e414]:
+                - button "¿A qué comunas llegan?" [ref=f10e415]
+              - region "¿A qué comunas llegan?":
+                - paragraph [ref=f10e420]: Todo Santiago según tu proyecto. Nos especializamos en Vitacura, Las Condes, La Reina, Lo Barnechea y Chicureo, más el sector poniente (Lampa, Ciudad de los Valles, Padre Hurtado).
+      - region [ref=f10e421]:
+        - generic [ref=f10e423]:
+          - heading "Partamos con una conversación" [level=2] [ref=f10e425]
+          - paragraph [ref=f10e427]: Cuéntanos qué proyecto tienes en mente. Te respondemos directo, sin intermediarios.
+          - link "Cotiza tu proyecto" [ref=f10e429] [cursor=pointer]:
+            - /url: "#cotiza"
+          - paragraph [ref=f10e431]: Arquitectura + Construcción · Santiago, Chile
+    - contentinfo [ref=f10e432]:
+      - generic [ref=f10e433]:
+        - generic [ref=f10e434]:
+          - generic [ref=f10e435]: Constructora P.G
+          - paragraph [ref=f10e438]: "Del plano a la entrega, sin intermediarios: diseño, construcción y mantención con un único responsable."
+        - navigation "Pie de página" [ref=f10e439]:
+          - paragraph [ref=f10e440]: Secciones
+          - list [ref=f10e441]:
+            - listitem [ref=f10e442]:
+              - link "Servicios" [ref=f10e443] [cursor=pointer]:
+                - /url: "#servicios"
+            - listitem [ref=f10e444]:
+              - link "Proyectos" [ref=f10e445] [cursor=pointer]:
+                - /url: "#proyectos"
+            - listitem [ref=f10e446]:
+              - link "Precios" [ref=f10e447] [cursor=pointer]:
+                - /url: "#precios"
+            - listitem [ref=f10e448]:
+              - link "Preguntas frecuentes" [ref=f10e449] [cursor=pointer]:
+                - /url: "#faq"
+        - generic [ref=f10e450]:
+          - paragraph [ref=f10e451]: En esta etapa
+          - list [ref=f10e452]:
+            - listitem [ref=f10e453]: Precios netos, en UF
+            - listitem [ref=f10e454]: Cuotas con Transbank
+            - listitem [ref=f10e455]: Fotografías de obra en camino
+      - generic [ref=f10e457]:
+        - paragraph [ref=f10e458]: © 2026 Constructora P.G · Santiago, Chile
+        - paragraph [ref=f10e459]: Del plano a la entrega
+  - button "Open Next.js Dev Tools" [ref=f10e465] [cursor=pointer]
