@@ -163,7 +163,7 @@ export function ServiceIcon({ kind, className = "" }: ServiceIconProps) {
   );
 }
 
-export function PlateMotif({ kind }: { kind: "quincho" | "cocina" | "bano" | "arquitectura" | "piscina" | "acceso" }) {
+export function PlateMotif({ kind, className = "" }: { kind: "quincho" | "cocina" | "bano" | "arquitectura" | "piscina" | "acceso"; className?: string }) {
   const stroke = {
     fill: "none",
     stroke: "currentColor",
@@ -172,7 +172,7 @@ export function PlateMotif({ kind }: { kind: "quincho" | "cocina" | "bano" | "ar
   };
   if (kind === "quincho") {
     return (
-      <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className="h-14 w-auto">
+      <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className={className}>
         <path d="M 6 52 H 90" />
         <path d="M 18 52 V 24 L 48 10 L 78 24 V 52" />
         <path d="M 30 33 H 66 M 36 40 H 60 M 40 47 H 56" />
@@ -182,7 +182,7 @@ export function PlateMotif({ kind }: { kind: "quincho" | "cocina" | "bano" | "ar
   }
   if (kind === "cocina") {
     return (
-      <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className="h-14 w-auto">
+      <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className={className}>
         <rect x="8" y="14" width="80" height="38" />
         <path d="M 8 32 H 88" />
         <path d="M 30 14 V 32 M 56 14 V 32 M 8 14 H 88" opacity="0.6" />
@@ -193,7 +193,7 @@ export function PlateMotif({ kind }: { kind: "quincho" | "cocina" | "bano" | "ar
   }
   if (kind === "bano") {
     return (
-      <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className="h-14 w-auto">
+      <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className={className}>
         <path d="M 10 48 H 86" />
         <rect x="12" y="18" width="22" height="30" opacity="0.7" />
         <path d="M 22 18 V 40 M 12 29 H 34" opacity="0.6" />
@@ -205,7 +205,7 @@ export function PlateMotif({ kind }: { kind: "quincho" | "cocina" | "bano" | "ar
   }
   if (kind === "piscina") {
     return (
-      <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className="h-14 w-auto">
+      <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className={className}>
         <rect x="6" y="22" width="84" height="30" />
         <path d="M 6 35 Q 20 30 34 35 T 62 35 T 90 35" opacity="0.7" />
         <path d="M 6 44 Q 20 39 34 44 T 62 44 T 90 44" opacity="0.45" />
@@ -215,7 +215,7 @@ export function PlateMotif({ kind }: { kind: "quincho" | "cocina" | "bano" | "ar
   }
   if (kind === "acceso") {
     return (
-      <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className="h-14 w-auto">
+      <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className={className}>
         <path d="M 6 52 H 90" />
         <rect x="10" y="14" width="76" height="38" opacity="0.6" />
         <path d="M 22 14 V 52 M 38 14 V 52 M 54 14 V 52 M 70 14 V 52" />
@@ -224,7 +224,7 @@ export function PlateMotif({ kind }: { kind: "quincho" | "cocina" | "bano" | "ar
     );
   }
   return (
-    <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className="h-14 w-auto">
+    <svg viewBox="0 0 96 60" {...stroke} aria-hidden="true" className={className}>
       <path d="M 8 54 H 88 M 16 54 V 30 M 16 30 H 60 V 54 M 60 54 V 38 M 60 38 H 82 V 54" />
       <path d="M 24 30 V 54 M 32 30 V 54 M 40 30 V 54 M 48 30 V 54" opacity="0.5" />
       <circle cx="70" cy="46" r="4" opacity="0.7" />

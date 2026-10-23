@@ -1,6 +1,7 @@
 import Reveal from "./_components/Reveal";
 import Faq, { type Qa } from "./_components/Faq";
-import { PlanoHero, ServiceIcon, PlateMotif } from "./_components/plano";
+import { PlanoHero, ServiceIcon } from "./_components/plano";
+import Carousel, { type CarouselSlide } from "./_components/Carousel";
 
 const marqueeItems = [
   "Arquitectura y diseño",
@@ -77,17 +78,10 @@ const stages = [
   },
 ];
 
-type Project = {
-  n: string;
-  name: string;
-  tag: string;
-  place: string;
-  motif: "quincho" | "cocina" | "bano" | "arquitectura" | "piscina" | "acceso";
-  featured?: boolean;
-};
+type Project = CarouselSlide;
 
-const projects: Project[] = [
-  { n: "P-01", name: "Isabel la Católica", tag: "Quincho", place: "Las Condes", motif: "quincho", featured: true },
+const projects: CarouselSlide[] = [
+  { n: "P-01", name: "Isabel la Católica", tag: "Quincho", place: "Las Condes", motif: "quincho" },
   { n: "P-02", name: "Candelaria", tag: "Quincho", place: "Vitacura", motif: "quincho" },
   { n: "P-03", name: "Río Lahn", tag: "Quincho", place: "Chicureo", motif: "quincho" },
   { n: "P-04", name: "Basel", tag: "Cocina", place: "Lo Barnechea", motif: "cocina" },
@@ -340,40 +334,20 @@ export default function Home() {
           <div className="mx-auto max-w-[1200px] px-5 py-20 md:px-8 md:py-24">
             <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
               <Reveal className="lg:col-span-7">
-                <h2 id="proy-title" className="font-display text-[clamp(2.2rem,4.6vw,3.5rem)] leading-[1.02] font-bold tracking-[-0.015em]">
-                  Obra construida, <span className="text-blue">lámina por lámina</span>
+                <h2 id="proy-title" className="font-display text-[clamp(2rem,4.2vw,3.2rem)] leading-[1.04] font-bold tracking-[-0.015em]">
+                  Acá irán los proyectos de las fotos <span className="text-blue">que me enviaste</span>
                 </h2>
               </Reveal>
               <Reveal delay={120} className="lg:col-span-5">
                 <p className="max-w-[52ch] text-[15.5px] leading-relaxed text-graph lg:pb-2">
-                  Nueve obras con nombre, programa y comuna. Las fotografías reales de cada una se integran en la próxima etapa; la lámina ya te dice qué es.
+                  (Esta galería luego se rellenará con las fotos que me envíes; cada lámina ya lleva nombre, programa y comuna.)
                 </p>
               </Reveal>
             </div>
 
-            <ul className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {projects.map((p, i) => (
-                <li key={p.n} className={`list-none ${p.featured ? "sm:col-span-2 lg:row-span-2" : ""}`}>
-                  <Reveal delay={(i % 3) * 70} className="h-full">
-                    <article
-                    className="group relative flex h-full min-h-[210px] flex-col justify-between border border-ink/12 bg-mist p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue hover:outline hover:outline-2 hover:outline-blue hover:outline-offset-4"
-                  >
-                    <div className="flex items-start justify-between">
-                      <span className="font-display text-[12px] font-bold tracking-[0.18em] text-blue-deep">{p.n}</span>
-                      <span className="font-display text-[11px] font-medium tracking-[0.14em] text-ink/60 uppercase">{p.tag}</span>
-                    </div>
-                    <div className="pointer-events-none flex flex-1 items-center justify-center py-5 text-ink/45 transition-colors duration-300 group-hover:text-blue/70">
-                      <PlateMotif kind={p.motif} />
-                    </div>
-                    <div>
-                      <h3 className="font-display text-[16.5px] leading-tight font-bold text-ink">{p.name}</h3>
-                      <p className="mt-1 font-display text-[12.5px] tracking-[0.08em] text-graph uppercase">{p.place}</p>
-                    </div>
-                  </article>
-                  </Reveal>
-                </li>
-              ))}
-            </ul>
+            <Reveal delay={150}>
+              <Carousel slides={projects} />
+            </Reveal>
           </div>
         </section>
 
