@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T18:36:00Z",
+  "title": "Design System: Constructora P.G",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "Azul Obra",
+        "canonical": "#3f6fd4",
+        "tonalRamp": ["#000048", "#001366", "#003385", "#1951a5", "#376fc6", "#5e98f2", "#88c5ff", "#b1f0ff"]
+      },
+      "blue-deep": {
+        "role": "primary-deep",
+        "displayName": "Cota Azul",
+        "canonical": "#2b50ab",
+        "tonalRamp": ["#030045", "#001363", "#123282", "#2c4fa2", "#476dc3", "#6b95ee", "#96c2ff", "#bfedff"]
+      },
+      "blue-soft": {
+        "role": "primary-soft",
+        "displayName": "Azul de Relleno (reservado, sin uso)",
+        "canonical": "#e8eefb",
+        "tonalRamp": ["#070b12", "#1d2229", "#363b43", "#50565e", "#6c727b", "#9399a2", "#bec4cf", "#e8effa"]
+      },
+      "ink": {
+        "role": "neutral-ink",
+        "displayName": "Tinta",
+        "canonical": "#111113",
+        "tonalRamp": ["#0b0b0d", "#212123", "#3a3a3d", "#555557", "#717174", "#98989b", "#c4c4c7", "#eeeef1"]
+      },
+      "graph": {
+        "role": "neutral-secondary-text",
+        "displayName": "Grafito",
+        "canonical": "#43464d",
+        "tonalRamp": ["#090b0f", "#1f2226", "#383b3f", "#53555a", "#6f7277", "#95989e", "#c1c4ca", "#ebeef5"]
+      },
+      "mist": {
+        "role": "neutral-surface",
+        "displayName": "Neblina",
+        "canonical": "#f4f6fa",
+        "tonalRamp": ["#0a0b0e", "#202225", "#393b3e", "#535559", "#6f7275", "#96989c", "#c2c4c8", "#eceff3"]
+      },
+      "paper": {
+        "role": "neutral-paper",
+        "displayName": "Papel",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#0b0b0c", "#212223", "#3a3a3b", "#545556", "#717173", "#979899", "#c3c4c5", "#eeeef0"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Enunciado completo de la promesa: hero «PLANO. OBRA. ENTREGA.» y CTA final. Uppercase, Chakra Petch bold."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "H2 de sección con la palabra clave final en Azul Obra."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "H3 de familia, preguntas de FAQ, nombres de obra, servicios y cifras UF de la tabla."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Párrafos en Archivo, con anchos máximos normativos en ch según bloque (58/52/48/34/68/54/44)."
+      },
+      "label": {
+        "displayName": "Label técnico",
+        "purpose": "Micro-tipografía Chakra Petch uppercase tracking 0.06–0.22em: códigos, números de lámina, encabezados de tabla, chips, contadores."
+      }
+    },
+    "motion": [
+      {
+        "name": "ease-trace",
+        "value": "cubic-bezier(0.77, 0, 0.18, 1)",
+        "purpose": "Trazado técnico: trazo del plano (.trace 1,15s con stagger --d) y regla medidora (.measure-line scaleX, 1,4s + 0,15s)."
+      },
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Llegadas que se asientan: .build del volumen (1s), reveal unificado (0,8s), acordeón FAQ y barra de progreso (500ms), zoom de imagen (500ms, scale 1.03)."
+      },
+      {
+        "name": "duration-state",
+        "value": "300ms",
+        "purpose": "Estados de color por hover (background/borde/texto) y transiciones-color en filas, tags y controles."
+      },
+      {
+        "name": "reveal-arm",
+        "value": "translateY(16px), IntersectionObserver threshold 0.18, rootMargin '0px 0px -6% 0px'",
+        "purpose": "Armado del reveal unificado con delay escalonado por --rd (60–220ms; hero 0/110/220/380/480ms)."
+      },
+      {
+        "name": "draw-order",
+        "value": "trace 0–0,7s → build 1,05s → cartela/cotas 1,15–1,2s",
+        "purpose": "Orden narrativo del plano del hero: líneas de tinta, sondas azules, relleno del volumen azul, cartela y cotas."
+      },
+      {
+        "name": "marquee-run",
+        "value": "translateX(-50%) 32s linear infinite; hover: animation-play-state paused",
+        "purpose": "Cinta de servicios con loop continuo y pausa al pasar el cursor."
+      },
+      {
+        "name": "reduced-motion-contract",
+        "value": "animation: none; scroll-behavior: auto; reveal/measure/trace/build resueltos al estado final",
+        "purpose": "prefers-reduced-motion resuelve la lámina completa: nada animado, nada oculto."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button (hero)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "CTA primario «Cotiza tu proyecto» sobre papel: azul sólido con borde del mismo azul; hover invierte a tinta.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Cotiza tu proyecto</a>",
+      "css": ".ds-btn-primary { display: inline-block; padding: 14px 24px; border: 1px solid var(--color-blue, #3f6fd4); background: var(--color-blue, #3f6fd4); color: #fff; font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; transition: background-color 0.3s, color 0.3s, border-color 0.3s; } .ds-btn-primary:hover { background: var(--color-ink, #111113); border-color: var(--color-ink, #111113); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-blue, #3f6fd4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Primary Button (nav)",
+      "kind": "button",
+      "refersTo": "button-primary-nav",
+      "description": "CTA compacto «Cotiza» de la nav: azul sólido 13px; hover se vacía a papel con texto azul.",
+      "html": "<a class=\"ds-btn-nav\" href=\"#\">Cotiza</a>",
+      "css": ".ds-btn-nav { display: inline-block; padding: 8px 16px; border: 1px solid var(--color-blue, #3f6fd4); background: var(--color-blue, #3f6fd4); color: #fff; font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background-color 0.3s, color 0.3s; } .ds-btn-nav:hover { background: var(--color-paper, #ffffff); color: var(--color-blue, #3f6fd4); } .ds-btn-nav:focus-visible { outline: 2px solid var(--color-blue, #3f6fd4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Inverse Button (campo azul)",
+      "kind": "button",
+      "refersTo": "button-inverse",
+      "description": "Botón «Cotiza tu proyecto» del CTA final sobre el campo azul: papel con tinta; hover invierte a tinta con blanco.",
+      "html": "<a class=\"ds-btn-inverse\" href=\"#\">Cotiza tu proyecto</a>",
+      "css": ".ds-btn-inverse { display: inline-block; padding: 16px 28px; background: var(--color-paper, #ffffff); color: var(--color-ink, #111113); font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; transition: background-color 0.3s, color 0.3s; } .ds-btn-inverse:hover { background: var(--color-ink, #111113); color: #fff; } .ds-btn-inverse:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Rule Link",
+      "kind": "custom",
+      "refersTo": "link-rule",
+      "description": "CTA secundario «Ver proyectos»: label técnico en tinta con regla de 1px que crece 24→40px y se pinta azul.",
+      "html": "<a class=\"ds-link-rule\" href=\"#\">Ver proyectos<span class=\"ds-link-rule-line\"></span></a>",
+      "css": ".ds-link-rule { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--color-ink, #111113); text-decoration: none; } .ds-link-rule-line { display: inline-block; width: 24px; height: 1px; background: var(--color-ink, #111113); transition: width 0.3s, background-color 0.3s; } .ds-link-rule:hover .ds-link-rule-line { width: 40px; background: var(--color-blue, #3f6fd4); } .ds-link-rule:focus-visible { outline: 2px solid var(--color-blue, #3f6fd4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Service Tag Chip",
+      "kind": "chip",
+      "refersTo": "chip-tag",
+      "description": "Etiqueta de alcance de la fila de familia: caja cuadrada borde tinta/15, texto grafito 12px; hover de fila la tiñe azul.",
+      "html": "<ul class=\"ds-chips\"><li class=\"ds-chip\">Quinchos y terrazas</li><li class=\"ds-chip\">Cocinas integrales</li></ul>",
+      "css": ".ds-chips { display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; align-content: flex-start; } .ds-chip { border: 1px solid color-mix(in srgb, var(--color-ink, #111113) 15%, transparent); color: var(--color-graph, #43464d); padding: 4px 10px; font-family: var(--font-body, 'Archivo'), sans-serif; font-size: 12px; font-weight: 500; transition: border-color 0.3s, color 0.3s; } .ds-chip:hover, .ds-chips:hover .ds-chip { border-color: color-mix(in srgb, var(--color-blue, #3f6fd4) 40%, transparent); color: var(--color-ink, #111113); }"
+    },
+    {
+      "name": "Technical Label",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Etiqueta técnica lámina (código, contador, quickfacts): Chakra Petch uppercase tracking generoso con bullet cuadrado azul opcional.",
+      "html": "<p class=\"ds-label\"><span class=\"ds-label-dot\"></span>QUINCHOS 6–12 SEM</p>",
+      "css": ".ds-label { display: flex; align-items: center; gap: 8px; margin: 0; font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 11.5px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-graph, #43464d); white-space: nowrap; } .ds-label-dot { width: 6px; height: 6px; background: var(--color-blue, #3f6fd4); flex-shrink: 0; }"
+    },
+    {
+      "name": "Service Family Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Fila de la tabla de familias: código + icono técnico + título/desc + tags, con hairlines y hover que tiñe de neblina y traspasa icono/código a azul.",
+      "html": "<article class=\"ds-family\">\n  <span class=\"ds-family-code\">FAM-B</span>\n  <span class=\"ds-family-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"square\"><path d=\"M 14 42 H 32\" /><path d=\"M 23 42 V 12\" /><path d=\"M 10 12 H 40\" /><path d=\"M 10 12 L 23 20\" /><path d=\"M 36 12 V 21\" /><rect x=\"32\" y=\"21\" width=\"7\" height=\"7\" /></svg></span>\n  <div><h3 class=\"ds-family-title\">Construcción y obra</h3><p class=\"ds-family-desc\">Quinchos y terrazas, cocinas integrales, casas y obras con hormigón y terminación.</p></div>\n  <ul class=\"ds-chips\"><li class=\"ds-chip\">Quinchos y terrazas</li><li class=\"ds-chip\">Losas y radieres</li></ul>\n</article>",
+      "css": ".ds-family { display: grid; grid-template-columns: 80px 56px 1fr; gap: 32px; padding: 32px 0; border-top: 1px solid color-mix(in srgb, var(--color-ink, #111113) 10%, transparent); border-bottom: 1px solid color-mix(in srgb, var(--color-ink, #111113) 10%, transparent); transition: background-color 0.3s; } .ds-family:hover { background: var(--color-mist, #f4f6fa); } .ds-family-code { font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.16em; color: color-mix(in srgb, var(--color-ink, #111113) 60%, transparent); transition: color 0.3s; } .ds-family:hover .ds-family-code { color: var(--color-blue, #3f6fd4); } .ds-family-icon { color: color-mix(in srgb, var(--color-ink, #111113) 70%, transparent); transition: color 0.3s; } .ds-family:hover .ds-family-icon { color: var(--color-blue, #3f6fd4); } .ds-family-icon svg { width: 44px; height: 44px; } .ds-family-title { margin: 0; font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 21px; font-weight: 700; color: var(--color-ink, #111113); } .ds-family-desc { margin: 8px 0 0; max-width: 48ch; font-family: var(--font-body, 'Archivo'), sans-serif; font-size: 14.5px; line-height: 1.625; color: var(--color-graph, #43464d); } @media (min-width: 768px) { .ds-family { grid-template-columns: 80px 56px 1.4fr 1fr; } }"
+    },
+    {
+      "name": "Carousel Figure (lámina de obra)",
+      "kind": "card",
+      "refersTo": "carousel-figure",
+      "description": "Figura de la galería: caja cuadrada borde tinta/12 sobre neblina, imagen 4:3, chip de lámina tinta/85 y pie con nombre + chip tag.",
+      "html": "<figure class=\"ds-figure\">\n  <div class=\"ds-figure-media\"><span class=\"ds-figure-l\">L-01</span></div>\n  <figcaption class=\"ds-figure-foot\"><span class=\"ds-figure-name\">Obra en terreno</span><span class=\"ds-figure-tag\">Foto real</span></figcaption>\n</figure>",
+      "css": ".ds-figure { border: 1px solid color-mix(in srgb, var(--color-ink, #111113) 12%, transparent); background: var(--color-mist, #f4f6fa); margin: 0; } .ds-figure-media { position: relative; aspect-ratio: 4 / 3; border-bottom: 1px solid color-mix(in srgb, var(--color-ink, #111113) 12%, transparent); cursor: zoom-in; display: flex; align-items: center; justify-content: center; color: var(--color-graph, #43464d); font-size: 40px; } .ds-figure-l { position: absolute; top: 12px; left: 16px; background: color-mix(in srgb, var(--color-ink, #111113) 85%, transparent); color: #fff; padding: 4px 8px; font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; } .ds-figure-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px; } .ds-figure-name { font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 15.5px; font-weight: 700; line-height: 1.2; color: var(--color-ink, #111113); } .ds-figure-tag { border: 1px solid color-mix(in srgb, var(--color-ink, #111113) 15%, transparent); padding: 4px 10px; font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-graph, #43464d); }"
+    },
+    {
+      "name": "FAQ Accordion Item",
+      "kind": "custom",
+      "refersTo": "faq-item",
+      "description": "Pregunta del acordeón con icono +/− dibujado en reglas, panel por grid-rows y hairlines de tinta/10; aquí abierto.",
+      "html": "<div class=\"ds-faq\">\n  <button type=\"button\" class=\"ds-faq-q\" aria-expanded=\"true\">¿Hacen solo diseño o también construyen?<span class=\"ds-faq-icon\" aria-hidden=\"true\"><span class=\"h\"></span><span class=\"v\"></span></span></button>\n  <div class=\"ds-faq-panel\"><p>Ambos. La mayoría de los proyectos integran diseño y obra bajo el mismo equipo.</p></div>\n</div>",
+      "css": ".ds-faq { border-bottom: 1px solid color-mix(in srgb, var(--color-ink, #111113) 10%, transparent); border-top: 1px solid color-mix(in srgb, var(--color-ink, #111113) 10%, transparent); } .ds-faq-q { display: flex; width: 100%; justify-content: space-between; align-items: flex-start; gap: 24px; padding: 20px 0; background: none; border: 0; text-align: left; cursor: pointer; font-family: var(--font-chakra, 'Chakra Petch'), sans-serif; font-size: 17px; font-weight: 600; line-height: 1.35; color: var(--color-ink, #111113); } .ds-faq-icon { position: relative; flex-shrink: 0; width: 16px; height: 16px; margin-top: 4px; color: var(--color-blue, #3f6fd4); } .ds-faq-icon .h { position: absolute; top: 50%; left: 0; width: 16px; height: 2px; background: currentColor; transform: translateY(-50%); } .ds-faq-icon .v { position: absolute; top: 0; left: 50%; height: 16px; width: 2px; background: currentColor; transform: translateX(-50%); } .ds-faq-icon:has(.v) { transition: color 0.3s; } .ds-faq-q:hover .ds-faq-icon { color: var(--color-blue, #3f6fd4); } .ds-faq-panel { display: block; overflow: hidden; } .ds-faq-panel p { margin: 0 0 24px; max-width: 68ch; font-family: var(--font-body, 'Archivo'), sans-serif; font-size: 15.5px; line-height: 1.625; color: var(--color-graph, #43464d); } .ds-faq:focus-visible { outline: 2px solid var(--color-blue, #3f6fd4); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "La lámina viva — la página ES un plano de obra que se va construyendo en vivo.",
+    "overview": "Todo el sistema se comporta como una lámina de ploteo técnica: papel blanco dominante, retícula azul de trazado al fondo de los paneles de planificación, numeración de láminas (FAM-A…D, L-01…38, P-00, 01/38), cotas con ticks y cartelas «ESC 1:100». El momento memorable es el plano del hero: una axonometría de líneas de tinta que se traza sola (1,15s por segmento, delays escalonados) y al final se rellena de azul (el volumen crece con su base a los 1,05s). La construcción es literal, no metáfora decorada: el visitante ve cómo una obra pasa de líneas a volumen azul — «del plano a la entrega, sin intermediarios». Un único azul committed (el azul del logotipo, #3F6FD4) lleva los campos enteros designados: la cinta marquee de servicios, la banda CTA final con su retícula blanca de 34px, el volumen del plano del hero, la palabra acentuada de cada titular y los botones primarios. Nada de segundo acento, nada de gradiente, nada de difuminado; profundidad y jerarquía salen de la capa tonal (papel → neblina → tinta), hairlines de 1px y la disputa tipográfica entre la técnica cuadrada y el cuerpo neutro. La imagen protagonista no es la foto-tape típica del rubro: es la lámina dibujándose, con los datos duros publicados en UF como prueba de transparencia.",
+    "keyCharacteristics": [
+      "Hero plano vivo: trazado por trazado (stroke-draw) + relleno del volumen azul; cotas y cartela de lámina incluidas.",
+      "Papel blanco dominante; secciones de planificación alternas en «neblina» azulado con retícula de ploteo de 17px al 6%.",
+      "Un solo azul committed (#3F6FD4) que lleva campos enteros o marca acción puntual; nunca tinte decorativo.",
+      "Chakra Petch para display y toda etiqueta técnica (uppercase, tracking generoso); Archivo para el cuerpo.",
+      "Hairlines de 1px, esquinas rectas en todo el sistema, cero sombras y cero blur.",
+      "Historia en secuencia: la obra se dibuja y se rellena, mientras los precios reales en UF se leen sin vueltas."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "Un solo azul committed, el del logo (#3F6FD4). Cota Azul (#2B50AB) es *ese mismo* azul a temperatura de lectura sobre neblina y en micro-tipografía — no un segundo azul. Sin azules nuevos, sin acentos paralelos, sin degradados de nada.",
+        "section": "colors"
+      },
+      {
+        "name": "The Field-or-Accent Rule",
+        "body": "El azul o lleva un campo entero designado (cinta marquee, banda CTA final, volumen del plano) o marca acción/énfasis puntual (botón, palabra, link, marcador). Nunca es tinte de fondo decorativo ni un hover difuso.",
+        "section": "colors"
+      },
+      {
+        "name": "The Square Type Rule",
+        "body": "Toda etiqueta técnica, código de lámina, número de etapa, encabezado de tabla, chip y botón va en Chakra Petch, MAYÚSCULAS, tracking generoso (0.06–0.22em). Archivo nunca hace labeling ni display.",
+        "section": "typography"
+      },
+      {
+        "name": "The Cota Rule",
+        "body": "Las cifras de precios («20–25 UF/m²») van en Chakra Petch bold con tabular-nums; las filas marcadas (referencias llave en mano — flag) llevan Cota Azul en vez de tinta. La cifra tabular es la voz de la transparencia; nunca se estiliza como «marketing».",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Sheet Rule",
+        "body": "Ninguna sombra, blur ni glass: esto se imprime en ploteo. La profundidad se dibuja con capas de tono y líneas de 1px; jamás se inventa con luz difusa.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No-Radius Rule",
+        "body": "border-radius: 0 en toda la UI. Si algo necesita esquina suave, el diseño está cambiando de mundo — el requisito se niega, no se doblega.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Reveal Unity Rule",
+        "body": "Todo entra a viewport con el mismo armado (.reveal-armed: opacity 0 + translateY(16px) → .is-in en 0,8s cubic-bezier(0.16,1,0.3,1)), con delays escalonados 60–220ms por --rd y disparo vía IntersectionObserver (threshold 0.18, rootMargin −6%).",
+        "section": "components"
+      },
+      {
+        "name": "The Draw Order Rule",
+        "body": "Primero las líneas (.trace: dashoffset 1→0 en 1,15s, stagger 0–0,7s), luego el volumen (.build: scaleY 0.72→1 desde la base, ~1s), y el estado completo resuelto de una vez si el usuario pide prefers-reduced-motion.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do usar papel blanco como superficie dominante y neblina (#F4F6FA) para las secciones de planificación — con retícula de ploteo de 17px al 6% cuando el bloque sea técnico.",
+      "Do mantener el azul committed (#3F6FD4) en campos enteros designados (marquee, banda CTA, volumen del plano) y acción puntual — con Cota Azul (#2B50AB) para micro-texto sobre neblina y cifras marcadas.",
+      "Do apilar y separar con hairlines de 1px (tinta/10 base, tinta/25 en headers de tabla) y capas tonales papel/neblina/tinta — la profundidad es de capa, no de luz.",
+      "Do escribir toda etiqueta técnica en Chakra Petch uppercase con tracking 0.06–0.22em, y toda cifra UF con tabular-nums.",
+      "Do estados de hover por color (background/borde/texto a 300ms) y :focus-visible con outline: 2px solid Azul Obra offset 3px (blanco dentro del campo azul).",
+      "Do mantener una firma de animación compartida: reveal unificado translateY(16px) 0,8s ease-settle con delays escalonados; trazado de lámina en cubic-bezier(0.77, 0, 0.18, 1).",
+      "Do resolver todo el estado visual con prefers-reduced-motion: sin animaciones, lámina ya trazada y rellena, marquee estático y snap-scroll en «auto»."
+    ],
+    "donts": [
+      "Don't sombras, blur, backdrop-filter o glass — esa luz no existe en este mundo.",
+      "Don't border-radius (esquinas rectas; el único radio es el scrollbar cosmético del navegador).",
+      "Don't gradientes decorativos: el único linear-gradient legítimo es el que *dibuja retículas de 1px* (plot-grid) — nunca un wash de color.",
+      "Don't inventar un segundo azul, acento secundario, rojos/verdes de estado o grises cálidos — la neutralidad del sistema es fría (hue ~258–285°).",
+      "Don't usar blue-soft (#E8EEFB) sin que una iteración del mundo lo habilite primero (hoy es una reserva sin uso).",
+      "Don't estilizar cifras o plazos como «marketing» — los precios y garantías se presentan crudos, en tinta y tablas con marca.",
+      "Don't fabricar métricas de experiencia, testimonios ni badges visuales de confianza — el sistema no muestra evidencia que no sea real (PRODUCT.md: «solo evidencia real»)."
+    ]
+  }
+}

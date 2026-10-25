@@ -78,19 +78,15 @@ const stages = [
   },
 ];
 
-type Project = CarouselSlide;
-
-const projects: CarouselSlide[] = [
-  { n: "P-01", name: "Isabel la Católica", tag: "Quincho", place: "Las Condes", motif: "quincho" },
-  { n: "P-02", name: "Candelaria", tag: "Quincho", place: "Vitacura", motif: "quincho" },
-  { n: "P-03", name: "Río Lahn", tag: "Quincho", place: "Chicureo", motif: "quincho" },
-  { n: "P-04", name: "Basel", tag: "Cocina", place: "Lo Barnechea", motif: "cocina" },
-  { n: "P-05", name: "María Monvel", tag: "Cocina", place: "La Reina", motif: "cocina" },
-  { n: "P-06", name: "Remodelación de baño", tag: "Cocina", place: "Vitacura", motif: "bano" },
-  { n: "P-07", name: "Sabores del Patio", tag: "Arquitectura y obra", place: "Providencia", motif: "arquitectura" },
-  { n: "P-08", name: "Piscina con deck", tag: "Exteriores", place: "Lampa", motif: "piscina" },
-  { n: "P-09", name: "Cierre perimetral", tag: "Accesos", place: "Condominio Las Pircas", motif: "acceso" },
-];
+const projects: CarouselSlide[] = Array.from({ length: 38 }, (_, i) => {
+  const n = String(i + 1).padStart(2, "0");
+  return {
+    n: `L-${n}`,
+    name: "Obra en terreno",
+    tag: "Foto real",
+    src: `/obras/obra-${n}.jpg`,
+  };
+});
 
 const prices = [
   { service: "Quincho estándar", from: "20–25 UF/m²", note: "Llave en mano; sobre terraza existente, desde 200 UF. 20 m² ≈ 400 UF.", flag: true },
@@ -105,7 +101,7 @@ const prices = [
 const faqs: Qa[] = [
   {
     q: "¿Hacen solo diseño o también construyen?",
-    a: "Ambos. La mayoría de los proyectos integran diseño y obra bajo el mismo equipo; en otros desarrollamos el proyecto de arquitectura y el mandante construye con su propia constructora. En cada proyecto del portafolio se indica el alcance real.",
+    a: "Ambos. La mayoría de los proyectos integran diseño y obra bajo el mismo equipo; luego cada foto de la galería quedará asociada a su proyecto y a su alcance.",
   },
   {
     q: "¿Cuánto demora cada obra?",
@@ -223,7 +219,7 @@ export default function Home() {
             </Reveal>
           </div>
           <div className="border-t border-ink/10">
-            <ul className="mx-auto grid max-w-[1200px] grid-cols-2 gap-x-8 gap-y-2.5 px-5 py-4 sm:grid-cols-3 md:px-8 lg:grid-cols-6">
+            <ul className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-x-8 gap-y-2.5 px-5 py-4 md:px-8">
               {quickFacts.map((fact) => (
                 <li key={fact} className="flex items-center gap-2 font-display text-[11.5px] font-medium tracking-[0.1em] whitespace-nowrap text-graph uppercase">
                   <span aria-hidden="true" className="h-1.5 w-1.5 shrink-0 bg-blue" />
@@ -340,7 +336,7 @@ export default function Home() {
               </Reveal>
               <Reveal delay={120} className="lg:col-span-5">
                 <p className="max-w-[52ch] text-[15.5px] leading-relaxed text-graph lg:pb-2">
-                  (Esta galería luego se rellenará con las fotos que me envíes; cada lámina ya lleva nombre, programa y comuna.)
+                  (Fotografías reales de obra, aún sin clasificar; luego se etiquetarán por proyecto y comuna según me vayas confirmando el detalle.)
                 </p>
               </Reveal>
             </div>

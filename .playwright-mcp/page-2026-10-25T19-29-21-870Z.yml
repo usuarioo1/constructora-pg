@@ -1,0 +1,659 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - banner [ref=f3e3]:
+      - navigation "Principal" [ref=f3e4]:
+        - link "Constructora P.G" [ref=f3e5] [cursor=pointer]:
+          - /url: "#top"
+        - link "Cotiza" [ref=f3e7] [cursor=pointer]:
+          - /url: "#cotiza"
+      - generic [ref=f3e9]:
+        - link "Servicios" [ref=f3e10] [cursor=pointer]:
+          - /url: "#servicios"
+        - link "Cómo trabajamos" [ref=f3e11] [cursor=pointer]:
+          - /url: "#como"
+        - link "Proyectos" [ref=f3e12] [cursor=pointer]:
+          - /url: "#proyectos"
+        - link "Precios" [ref=f3e13] [cursor=pointer]:
+          - /url: "#precios"
+        - link "FAQ" [ref=f3e14] [cursor=pointer]:
+          - /url: "#faq"
+    - main [ref=f3e15]:
+      - region [ref=f3e16]:
+        - generic [ref=f3e17]:
+          - generic [ref=f3e18]:
+            - heading "Plano. Obra. Entrega." [level=1] [ref=f3e19]:
+              - generic [ref=f3e20]: Plano.
+              - generic [ref=f3e22]: Obra.
+              - generic [ref=f3e24]: Entrega.
+            - paragraph [ref=f3e27]:
+              - text: Arquitectura, construcción y mantención con un único responsable —
+              - strong [ref=f3e28]: del plano a la entrega, sin intermediarios
+              - text: . Precios reales publicados en UF, pago en cuotas y garantía que no termina con la entrega.
+            - generic [ref=f3e30]:
+              - link "Cotiza tu proyecto" [ref=f3e31] [cursor=pointer]:
+                - /url: "#cotiza"
+              - link "Ver proyectos" [ref=f3e32] [cursor=pointer]:
+                - /url: "#proyectos"
+          - 'img "Plano axonométrico que se dibuja solo: el proyecto pasa de líneas a volumen azul" [ref=f3e35]':
+            - generic [ref=f3e51]:
+              - generic [ref=f3e52]: P-00 · PROYECTO INTEGRAL
+              - generic [ref=f3e53]: ESC 1:100 · SANTIAGO, CL
+              - generic [ref=f3e54]: CONSTRUCTORA P.G
+            - generic [ref=f3e55]:
+              - generic [ref=f3e56]: 12 000
+              - generic [ref=f3e57]: 5 600
+        - list [ref=f3e59]:
+          - listitem [ref=f3e60]: Quinchos 6–12 sem
+          - listitem [ref=f3e62]: Cocinas 6–10 sem
+          - listitem [ref=f3e64]: Remodelaciones 8–20 sem
+          - listitem [ref=f3e66]: Casas 12–18 meses
+          - listitem [ref=f3e68]: Cuotas con Transbank
+          - listitem [ref=f3e70]: Garantía 3/5/10 años
+      - generic [ref=f3e73]:
+        - generic [ref=f3e74]:
+          - generic [ref=f3e75]:
+            - generic [ref=f3e76]: Arquitectura y diseño
+            - generic [ref=f3e77]: ·
+          - generic [ref=f3e78]:
+            - generic [ref=f3e79]: Quinchos y terrazas
+            - generic [ref=f3e80]: ·
+          - generic [ref=f3e81]:
+            - generic [ref=f3e82]: Cocinas integrales
+            - generic [ref=f3e83]: ·
+          - generic [ref=f3e84]:
+            - generic [ref=f3e85]: Construcción de casas
+            - generic [ref=f3e86]: ·
+          - generic [ref=f3e87]:
+            - generic [ref=f3e88]: Remodelaciones
+            - generic [ref=f3e89]: ·
+          - generic [ref=f3e90]:
+            - generic [ref=f3e91]: Mantención
+            - generic [ref=f3e92]: ·
+          - generic [ref=f3e93]:
+            - generic [ref=f3e94]: Portones y accesos
+            - generic [ref=f3e95]: ·
+          - generic [ref=f3e96]:
+            - generic [ref=f3e97]: Precios reales en UF
+            - generic [ref=f3e98]: ·
+          - generic [ref=f3e99]:
+            - generic [ref=f3e100]: Cuotas con Transbank
+            - generic [ref=f3e101]: ·
+        - generic [ref=f3e102]:
+          - generic [ref=f3e103]:
+            - generic [ref=f3e104]: Arquitectura y diseño
+            - generic [ref=f3e105]: ·
+          - generic [ref=f3e106]:
+            - generic [ref=f3e107]: Quinchos y terrazas
+            - generic [ref=f3e108]: ·
+          - generic [ref=f3e109]:
+            - generic [ref=f3e110]: Cocinas integrales
+            - generic [ref=f3e111]: ·
+          - generic [ref=f3e112]:
+            - generic [ref=f3e113]: Construcción de casas
+            - generic [ref=f3e114]: ·
+          - generic [ref=f3e115]:
+            - generic [ref=f3e116]: Remodelaciones
+            - generic [ref=f3e117]: ·
+          - generic [ref=f3e118]:
+            - generic [ref=f3e119]: Mantención
+            - generic [ref=f3e120]: ·
+          - generic [ref=f3e121]:
+            - generic [ref=f3e122]: Portones y accesos
+            - generic [ref=f3e123]: ·
+          - generic [ref=f3e124]:
+            - generic [ref=f3e125]: Precios reales en UF
+            - generic [ref=f3e126]: ·
+          - generic [ref=f3e127]:
+            - generic [ref=f3e128]: Cuotas con Transbank
+            - generic [ref=f3e129]: ·
+      - region [ref=f3e130]:
+        - generic [ref=f3e131]:
+          - generic [ref=f3e132]:
+            - heading "Lo que hacemos, de punta a punta" [level=2] [ref=f3e134]
+            - paragraph [ref=f3e136]: "Cuatro familias de servicio bajo la misma firma: quién diseña tu proyecto es quien lo construye y quien responde por él después."
+          - generic [ref=f3e137]:
+            - article [ref=f3e139]:
+              - generic [ref=f3e140]: FAM-A
+              - generic [ref=f3e145]:
+                - heading "Arquitectura y diseño" [level=3] [ref=f3e146]
+                - paragraph [ref=f3e147]: Proyectos de autor listos para construirse, sin improvisación. Diagnóstico, anteproyecto, planimetría constructiva y permisos.
+              - list [ref=f3e148]:
+                - listitem [ref=f3e149]: Casas nuevas
+                - listitem [ref=f3e150]: Ampliaciones
+                - listitem [ref=f3e151]: Remodelaciones integrales
+                - listitem [ref=f3e152]: Locales y oficinas
+                - listitem [ref=f3e153]: Consultoría
+            - article [ref=f3e155]:
+              - generic [ref=f3e156]: FAM-B
+              - generic [ref=f3e161]:
+                - heading "Construcción y obra" [level=3] [ref=f3e162]
+                - paragraph [ref=f3e163]: "El corazón del negocio: quinchos y terrazas, cocinas integrales, casas y todo lo que exige hormigón, estructura y terminación en obra."
+              - list [ref=f3e164]:
+                - listitem [ref=f3e165]: Quinchos y terrazas
+                - listitem [ref=f3e166]: Cocinas integrales
+                - listitem [ref=f3e167]: Obras menores y gruesa
+                - listitem [ref=f3e168]: Losas y radieres
+                - listitem [ref=f3e169]: Cobertizos y pérgolas
+            - article [ref=f3e171]:
+              - generic [ref=f3e172]: FAM-C
+              - generic [ref=f3e177]:
+                - heading "Reparación y mantención" [level=3] [ref=f3e178]
+                - paragraph [ref=f3e179]: "La casa y el local siempre en pie: pintura, cerámicas, instalaciones sanitarias y eléctricas con certificaciones, incluyendo emergencias."
+              - list [ref=f3e180]:
+                - listitem [ref=f3e181]: Pinturas
+                - listitem [ref=f3e182]: Cerámicas y porcelanatos
+                - listitem [ref=f3e183]: Gasfitería
+                - listitem [ref=f3e184]: Electricidad
+                - listitem [ref=f3e185]: Techumbres y canaletas
+                - listitem [ref=f3e186]: Carpintería
+            - article [ref=f3e188]:
+              - generic [ref=f3e189]: FAM-D
+              - generic [ref=f3e194]:
+                - heading "Seguridad y accesos" [level=3] [ref=f3e195]
+                - paragraph [ref=f3e196]: "Ven, identifícate y entra sin fricción: portones automáticos, control de accesos, cámaras y cierres, con soldadura estructural a medida."
+              - list [ref=f3e197]:
+                - listitem [ref=f3e198]: Portones automáticos
+                - listitem [ref=f3e199]: Control de accesos
+                - listitem [ref=f3e200]: Circuito de cámaras
+                - listitem [ref=f3e201]: Cierres perimetrales
+                - listitem [ref=f3e202]: Soldadura estructural
+      - region [ref=f3e203]:
+        - generic [ref=f3e205]:
+          - heading "Así evitamos errores en tu obra" [level=2] [ref=f3e207]
+          - list [ref=f3e208]:
+            - listitem [ref=f3e209]:
+              - generic [ref=f3e210]:
+                - paragraph [ref=f3e211]: "01"
+                - heading "Conversación" [level=3] [ref=f3e212]
+                - paragraph [ref=f3e213]: Nos cuentas qué proyecto tienes en mente. Sin formularios largos ni intermediarios.
+            - listitem [ref=f3e214]:
+              - generic [ref=f3e215]:
+                - paragraph [ref=f3e216]: "02"
+                - heading "Diseño y cotización" [level=3] [ref=f3e217]
+                - paragraph [ref=f3e218]: Diagnóstico para evitar errores antes de construir; presupuesto con costos propios de obra y cuotas opcionales.
+            - listitem [ref=f3e219]:
+              - generic [ref=f3e220]:
+                - paragraph [ref=f3e221]: "03"
+                - heading "Construcción" [level=3] [ref=f3e222]
+                - paragraph [ref=f3e223]: Ejecución con control técnico, permisos municipales gestionados y supervisión en terreno.
+            - listitem [ref=f3e224]:
+              - generic [ref=f3e225]:
+                - paragraph [ref=f3e226]: "04"
+                - heading "Entrega y garantía" [level=3] [ref=f3e227]
+                - paragraph [ref=f3e228]: Plazos claros y sin sorpresas. La garantía legal (3/5/10 años) y nuestro propio compromiso de seguir respondiendo.
+      - region [ref=f3e229]:
+        - generic [ref=f3e230]:
+          - generic [ref=f3e231]:
+            - heading "Acá irán los proyectos de las fotos que me enviaste" [level=2] [ref=f3e233]
+            - paragraph [ref=f3e235]: (Fotografías reales de obra, aún sin clasificar; luego se etiquetarán por proyecto y comuna según me vayas confirmando el detalle.)
+          - group "Galería de obras — 39 fotografías reales por clasificar" [ref=f3e237]:
+            - generic [ref=f3e238]:
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e239]:
+                - generic [ref=f3e240]:
+                  - img "Obra en terreno — fotografía 1 de 39" [ref=f3e241]
+                  - generic [ref=f3e242]: L-01
+                - generic [ref=f3e243]:
+                  - generic [ref=f3e244]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e245]
+                    - paragraph [ref=f3e246]: Fotografía real · por clasificar
+                  - generic [ref=f3e247]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e248]:
+                - generic [ref=f3e249]:
+                  - img "Obra en terreno — fotografía 2 de 39" [ref=f3e250]
+                  - generic [ref=f3e251]: L-02
+                - generic [ref=f3e252]:
+                  - generic [ref=f3e253]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e254]
+                    - paragraph [ref=f3e255]: Fotografía real · por clasificar
+                  - generic [ref=f3e256]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e257]:
+                - generic [ref=f3e258]:
+                  - img "Obra en terreno — fotografía 3 de 39" [ref=f3e259]
+                  - generic [ref=f3e260]: L-03
+                - generic [ref=f3e261]:
+                  - generic [ref=f3e262]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e263]
+                    - paragraph [ref=f3e264]: Fotografía real · por clasificar
+                  - generic [ref=f3e265]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e266]:
+                - generic [ref=f3e267]:
+                  - img "Obra en terreno — fotografía 4 de 39" [ref=f3e268]
+                  - generic [ref=f3e269]: L-04
+                - generic [ref=f3e270]:
+                  - generic [ref=f3e271]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e272]
+                    - paragraph [ref=f3e273]: Fotografía real · por clasificar
+                  - generic [ref=f3e274]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e275]:
+                - generic [ref=f3e276]:
+                  - img "Obra en terreno — fotografía 5 de 39" [ref=f3e277]
+                  - generic [ref=f3e278]: L-05
+                - generic [ref=f3e279]:
+                  - generic [ref=f3e280]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e281]
+                    - paragraph [ref=f3e282]: Fotografía real · por clasificar
+                  - generic [ref=f3e283]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e284]:
+                - generic [ref=f3e285]:
+                  - img "Obra en terreno — fotografía 6 de 39" [ref=f3e286]
+                  - generic [ref=f3e287]: L-06
+                - generic [ref=f3e288]:
+                  - generic [ref=f3e289]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e290]
+                    - paragraph [ref=f3e291]: Fotografía real · por clasificar
+                  - generic [ref=f3e292]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e293]:
+                - generic [ref=f3e294]:
+                  - img "Obra en terreno — fotografía 7 de 39" [ref=f3e295]
+                  - generic [ref=f3e296]: L-07
+                - generic [ref=f3e297]:
+                  - generic [ref=f3e298]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e299]
+                    - paragraph [ref=f3e300]: Fotografía real · por clasificar
+                  - generic [ref=f3e301]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e302]:
+                - generic [ref=f3e303]:
+                  - img "Obra en terreno — fotografía 8 de 39" [ref=f3e304]
+                  - generic [ref=f3e305]: L-08
+                - generic [ref=f3e306]:
+                  - generic [ref=f3e307]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e308]
+                    - paragraph [ref=f3e309]: Fotografía real · por clasificar
+                  - generic [ref=f3e310]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e311]:
+                - generic [ref=f3e312]:
+                  - img "Obra en terreno — fotografía 9 de 39" [ref=f3e313]
+                  - generic [ref=f3e314]: L-09
+                - generic [ref=f3e315]:
+                  - generic [ref=f3e316]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e317]
+                    - paragraph [ref=f3e318]: Fotografía real · por clasificar
+                  - generic [ref=f3e319]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e320]:
+                - generic [ref=f3e321]:
+                  - img "Obra en terreno — fotografía 10 de 39" [ref=f3e322]
+                  - generic [ref=f3e323]: L-10
+                - generic [ref=f3e324]:
+                  - generic [ref=f3e325]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e326]
+                    - paragraph [ref=f3e327]: Fotografía real · por clasificar
+                  - generic [ref=f3e328]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e329]:
+                - generic [ref=f3e330]:
+                  - img "Obra en terreno — fotografía 11 de 39" [ref=f3e331]
+                  - generic [ref=f3e332]: L-11
+                - generic [ref=f3e333]:
+                  - generic [ref=f3e334]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e335]
+                    - paragraph [ref=f3e336]: Fotografía real · por clasificar
+                  - generic [ref=f3e337]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e338]:
+                - generic [ref=f3e339]:
+                  - img "Obra en terreno — fotografía 12 de 39" [ref=f3e340]
+                  - generic [ref=f3e341]: L-12
+                - generic [ref=f3e342]:
+                  - generic [ref=f3e343]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e344]
+                    - paragraph [ref=f3e345]: Fotografía real · por clasificar
+                  - generic [ref=f3e346]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e347]:
+                - generic [ref=f3e348]:
+                  - img "Obra en terreno — fotografía 13 de 39" [ref=f3e349]
+                  - generic [ref=f3e350]: L-13
+                - generic [ref=f3e351]:
+                  - generic [ref=f3e352]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e353]
+                    - paragraph [ref=f3e354]: Fotografía real · por clasificar
+                  - generic [ref=f3e355]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e356]:
+                - generic [ref=f3e357]:
+                  - img "Obra en terreno — fotografía 14 de 39" [ref=f3e358]
+                  - generic [ref=f3e359]: L-14
+                - generic [ref=f3e360]:
+                  - generic [ref=f3e361]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e362]
+                    - paragraph [ref=f3e363]: Fotografía real · por clasificar
+                  - generic [ref=f3e364]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e365]:
+                - generic [ref=f3e366]:
+                  - img "Obra en terreno — fotografía 15 de 39" [ref=f3e367]
+                  - generic [ref=f3e368]: L-15
+                - generic [ref=f3e369]:
+                  - generic [ref=f3e370]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e371]
+                    - paragraph [ref=f3e372]: Fotografía real · por clasificar
+                  - generic [ref=f3e373]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e374]:
+                - generic [ref=f3e375]:
+                  - img "Obra en terreno — fotografía 16 de 39" [ref=f3e376]
+                  - generic [ref=f3e377]: L-16
+                - generic [ref=f3e378]:
+                  - generic [ref=f3e379]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e380]
+                    - paragraph [ref=f3e381]: Fotografía real · por clasificar
+                  - generic [ref=f3e382]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e383]:
+                - generic [ref=f3e384]:
+                  - img "Obra en terreno — fotografía 17 de 39" [ref=f3e385]
+                  - generic [ref=f3e386]: L-17
+                - generic [ref=f3e387]:
+                  - generic [ref=f3e388]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e389]
+                    - paragraph [ref=f3e390]: Fotografía real · por clasificar
+                  - generic [ref=f3e391]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e392]:
+                - generic [ref=f3e393]:
+                  - img "Obra en terreno — fotografía 18 de 39" [ref=f3e394]
+                  - generic [ref=f3e395]: L-18
+                - generic [ref=f3e396]:
+                  - generic [ref=f3e397]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e398]
+                    - paragraph [ref=f3e399]: Fotografía real · por clasificar
+                  - generic [ref=f3e400]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e401]:
+                - generic [ref=f3e402]:
+                  - img "Obra en terreno — fotografía 19 de 39" [ref=f3e403]
+                  - generic [ref=f3e404]: L-19
+                - generic [ref=f3e405]:
+                  - generic [ref=f3e406]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e407]
+                    - paragraph [ref=f3e408]: Fotografía real · por clasificar
+                  - generic [ref=f3e409]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e410]:
+                - generic [ref=f3e411]:
+                  - img "Obra en terreno — fotografía 20 de 39" [ref=f3e412]
+                  - generic [ref=f3e413]: L-20
+                - generic [ref=f3e414]:
+                  - generic [ref=f3e415]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e416]
+                    - paragraph [ref=f3e417]: Fotografía real · por clasificar
+                  - generic [ref=f3e418]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e419]:
+                - generic [ref=f3e420]:
+                  - img "Obra en terreno — fotografía 21 de 39" [ref=f3e421]
+                  - generic [ref=f3e422]: L-21
+                - generic [ref=f3e423]:
+                  - generic [ref=f3e424]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e425]
+                    - paragraph [ref=f3e426]: Fotografía real · por clasificar
+                  - generic [ref=f3e427]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e428]:
+                - generic [ref=f3e429]:
+                  - img "Obra en terreno — fotografía 22 de 39" [ref=f3e430]
+                  - generic [ref=f3e431]: L-22
+                - generic [ref=f3e432]:
+                  - generic [ref=f3e433]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e434]
+                    - paragraph [ref=f3e435]: Fotografía real · por clasificar
+                  - generic [ref=f3e436]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e437]:
+                - generic [ref=f3e438]:
+                  - img "Obra en terreno — fotografía 23 de 39" [ref=f3e439]
+                  - generic [ref=f3e440]: L-23
+                - generic [ref=f3e441]:
+                  - generic [ref=f3e442]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e443]
+                    - paragraph [ref=f3e444]: Fotografía real · por clasificar
+                  - generic [ref=f3e445]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e446]:
+                - generic [ref=f3e447]:
+                  - img "Obra en terreno — fotografía 24 de 39" [ref=f3e448]
+                  - generic [ref=f3e449]: L-24
+                - generic [ref=f3e450]:
+                  - generic [ref=f3e451]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e452]
+                    - paragraph [ref=f3e453]: Fotografía real · por clasificar
+                  - generic [ref=f3e454]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e455]:
+                - generic [ref=f3e456]:
+                  - img "Obra en terreno — fotografía 25 de 39" [ref=f3e457]
+                  - generic [ref=f3e458]: L-25
+                - generic [ref=f3e459]:
+                  - generic [ref=f3e460]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e461]
+                    - paragraph [ref=f3e462]: Fotografía real · por clasificar
+                  - generic [ref=f3e463]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e464]:
+                - generic [ref=f3e465]:
+                  - img "Obra en terreno — fotografía 26 de 39" [ref=f3e466]
+                  - generic [ref=f3e467]: L-26
+                - generic [ref=f3e468]:
+                  - generic [ref=f3e469]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e470]
+                    - paragraph [ref=f3e471]: Fotografía real · por clasificar
+                  - generic [ref=f3e472]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e473]:
+                - generic [ref=f3e474]:
+                  - img "Obra en terreno — fotografía 27 de 39" [ref=f3e475]
+                  - generic [ref=f3e476]: L-27
+                - generic [ref=f3e477]:
+                  - generic [ref=f3e478]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e479]
+                    - paragraph [ref=f3e480]: Fotografía real · por clasificar
+                  - generic [ref=f3e481]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e482]:
+                - generic [ref=f3e483]:
+                  - img "Obra en terreno — fotografía 28 de 39" [ref=f3e484]
+                  - generic [ref=f3e485]: L-28
+                - generic [ref=f3e486]:
+                  - generic [ref=f3e487]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e488]
+                    - paragraph [ref=f3e489]: Fotografía real · por clasificar
+                  - generic [ref=f3e490]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e491]:
+                - generic [ref=f3e492]:
+                  - img "Obra en terreno — fotografía 29 de 39" [ref=f3e493]
+                  - generic [ref=f3e494]: L-29
+                - generic [ref=f3e495]:
+                  - generic [ref=f3e496]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e497]
+                    - paragraph [ref=f3e498]: Fotografía real · por clasificar
+                  - generic [ref=f3e499]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e500]:
+                - generic [ref=f3e501]:
+                  - img "Obra en terreno — fotografía 30 de 39" [ref=f3e502]
+                  - generic [ref=f3e503]: L-30
+                - generic [ref=f3e504]:
+                  - generic [ref=f3e505]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e506]
+                    - paragraph [ref=f3e507]: Fotografía real · por clasificar
+                  - generic [ref=f3e508]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e509]:
+                - generic [ref=f3e510]:
+                  - img "Obra en terreno — fotografía 31 de 39" [ref=f3e511]
+                  - generic [ref=f3e512]: L-31
+                - generic [ref=f3e513]:
+                  - generic [ref=f3e514]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e515]
+                    - paragraph [ref=f3e516]: Fotografía real · por clasificar
+                  - generic [ref=f3e517]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e518]:
+                - generic [ref=f3e519]:
+                  - img "Obra en terreno — fotografía 32 de 39" [ref=f3e520]
+                  - generic [ref=f3e521]: L-32
+                - generic [ref=f3e522]:
+                  - generic [ref=f3e523]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e524]
+                    - paragraph [ref=f3e525]: Fotografía real · por clasificar
+                  - generic [ref=f3e526]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e527]:
+                - generic [ref=f3e528]:
+                  - img "Obra en terreno — fotografía 33 de 39" [ref=f3e529]
+                  - generic [ref=f3e530]: L-33
+                - generic [ref=f3e531]:
+                  - generic [ref=f3e532]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e533]
+                    - paragraph [ref=f3e534]: Fotografía real · por clasificar
+                  - generic [ref=f3e535]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e536]:
+                - generic [ref=f3e537]:
+                  - img "Obra en terreno — fotografía 34 de 39" [ref=f3e538]
+                  - generic [ref=f3e539]: L-34
+                - generic [ref=f3e540]:
+                  - generic [ref=f3e541]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e542]
+                    - paragraph [ref=f3e543]: Fotografía real · por clasificar
+                  - generic [ref=f3e544]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e545]:
+                - generic [ref=f3e546]:
+                  - img "Obra en terreno — fotografía 35 de 39" [ref=f3e547]
+                  - generic [ref=f3e548]: L-35
+                - generic [ref=f3e549]:
+                  - generic [ref=f3e550]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e551]
+                    - paragraph [ref=f3e552]: Fotografía real · por clasificar
+                  - generic [ref=f3e553]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e554]:
+                - generic [ref=f3e555]:
+                  - img "Obra en terreno — fotografía 36 de 39" [ref=f3e556]
+                  - generic [ref=f3e557]: L-36
+                - generic [ref=f3e558]:
+                  - generic [ref=f3e559]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e560]
+                    - paragraph [ref=f3e561]: Fotografía real · por clasificar
+                  - generic [ref=f3e562]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e563]:
+                - generic [ref=f3e564]:
+                  - img "Obra en terreno — fotografía 37 de 39" [ref=f3e565]
+                  - generic [ref=f3e566]: L-37
+                - generic [ref=f3e567]:
+                  - generic [ref=f3e568]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e569]
+                    - paragraph [ref=f3e570]: Fotografía real · por clasificar
+                  - generic [ref=f3e571]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e572]:
+                - generic [ref=f3e573]:
+                  - img "Obra en terreno — fotografía 38 de 39" [ref=f3e574]
+                  - generic [ref=f3e575]: L-38
+                - generic [ref=f3e576]:
+                  - generic [ref=f3e577]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e578]
+                    - paragraph [ref=f3e579]: Fotografía real · por clasificar
+                  - generic [ref=f3e580]: Foto real
+              - figure "Obra en terreno Fotografía real · por clasificar Foto real" [ref=f3e581]:
+                - generic [ref=f3e582]:
+                  - img "Obra en terreno — fotografía 39 de 39" [ref=f3e583]
+                  - generic [ref=f3e584]: L-39
+                - generic [ref=f3e585]:
+                  - generic [ref=f3e586]:
+                    - heading "Obra en terreno" [level=3] [ref=f3e587]
+                    - paragraph [ref=f3e588]: Fotografía real · por clasificar
+                  - generic [ref=f3e589]: Foto real
+            - generic [ref=f3e590]:
+              - generic [ref=f3e591]:
+                - button "Lámina anterior" [disabled] [ref=f3e592]
+                - button "Lámina siguiente" [ref=f3e595]
+              - paragraph [ref=f3e600]: 01 / 39
+      - region [ref=f3e601]:
+        - generic [ref=f3e602]:
+          - generic [ref=f3e603]:
+            - heading "Precios de referencia, en UF" [level=2] [ref=f3e605]
+            - paragraph [ref=f3e607]: "Publicamos el rango real de cada obra: la transparencia es el estándar de la casa. El valor final se fija en la cotización según los antecedentes de tu proyecto."
+          - table [ref=f3e610]:
+            - rowgroup [ref=f3e611]:
+              - row [ref=f3e612]:
+                - columnheader "Servicio" [ref=f3e613]
+                - columnheader "Desde" [ref=f3e614]
+            - rowgroup [ref=f3e615]:
+              - row [ref=f3e616]:
+                - cell "Quincho estándar" [ref=f3e617]
+                - cell "20–25 UF/m²" [ref=f3e618]
+              - row [ref=f3e619]:
+                - cell "Quincho nivel alto" [ref=f3e620]
+                - cell "40 UF/m²" [ref=f3e621]
+              - row [ref=f3e622]:
+                - cell "Remodelación de cocina" [ref=f3e623]
+                - cell "150–300 UF" [ref=f3e624]
+              - row [ref=f3e625]:
+                - cell "Construcción de casa" [ref=f3e626]
+                - cell "25–40 UF/m²" [ref=f3e627]
+              - row [ref=f3e628]:
+                - cell "Habilitación de oficina" [ref=f3e629]
+                - cell "6–8 UF/m²" [ref=f3e630]
+              - row [ref=f3e631]:
+                - cell "Diseño de arquitectura" [ref=f3e632]
+                - cell "1 UF/m²" [ref=f3e633]
+              - row [ref=f3e634]:
+                - cell "Mantención y reparaciones" [ref=f3e635]
+                - cell "A cotizar" [ref=f3e636]
+          - paragraph [ref=f3e638]:
+            - text: Precios netos, en UF ·
+            - link "Solicita tu cotización" [ref=f3e639] [cursor=pointer]:
+              - /url: "#cotiza"
+      - region [ref=f3e640]:
+        - generic [ref=f3e642]:
+          - heading "Lo que preguntan antes de cotizar" [level=2] [ref=f3e644]
+          - generic [ref=f3e646]:
+            - generic [ref=f3e647]:
+              - heading [level=3] [ref=f3e648]:
+                - button "¿Hacen solo diseño o también construyen?" [expanded] [ref=f3e649]
+              - region "¿Hacen solo diseño o también construyen?" [ref=f3e653]:
+                - paragraph [ref=f3e655]: Ambos. La mayoría de los proyectos integran diseño y obra bajo el mismo equipo; en otros desarrollamos el proyecto de arquitectura y el mandante construye con su propia constructora. En cada proyecto del portafolio se indica el alcance real.
+            - generic [ref=f3e656]:
+              - heading [level=3] [ref=f3e657]:
+                - button "¿Cuánto demora cada obra?" [ref=f3e658]
+              - region "¿Cuánto demora cada obra?":
+                - paragraph [ref=f3e663]: "Quinchos 6–12 semanas; cocinas 6–10; remodelaciones 8–20; casas 12–18 meses. El permiso municipal es variable: en el mejor caso parte a los 3 meses."
+            - generic [ref=f3e664]:
+              - heading [level=3] [ref=f3e665]:
+                - button "¿Cuánto cuesta?" [ref=f3e666]
+              - region "¿Cuánto cuesta?":
+                - paragraph [ref=f3e671]: Publicamos los precios de referencia en UF más arriba; el valor final se fija en la cotización sobre los antecedentes de tu proyecto.
+            - generic [ref=f3e672]:
+              - heading [level=3] [ref=f3e673]:
+                - button "¿Se puede pagar en cuotas?" [ref=f3e674]
+              - region "¿Se puede pagar en cuotas?":
+                - paragraph [ref=f3e679]: Sí. Todos los proyectos se pueden pagar en cuotas con Transbank, desde la cotización.
+            - generic [ref=f3e680]:
+              - heading [level=3] [ref=f3e681]:
+                - button "¿Se ocupan de los permisos?" [ref=f3e682]
+              - region "¿Se ocupan de los permisos?":
+                - paragraph [ref=f3e687]: Sí, gestionamos el permiso municipal completo. El trámite se cobra aparte, con un mínimo desde 30 UF por proceso.
+            - generic [ref=f3e688]:
+              - heading [level=3] [ref=f3e689]:
+                - button "¿Qué garantía tiene la obra?" [ref=f3e690]
+              - region "¿Qué garantía tiene la obra?":
+                - paragraph [ref=f3e695]: "Por ley (Art. 18 LGUC): 3 años en terminaciones, 5 en instalaciones y 10 en estructura. Y nuestro compromiso no termina ahí: si nos llamas después de los 3 años, respondemos igual."
+            - generic [ref=f3e696]:
+              - heading [level=3] [ref=f3e697]:
+                - button "¿A qué comunas llegan?" [ref=f3e698]
+              - region "¿A qué comunas llegan?":
+                - paragraph [ref=f3e703]: Todo Santiago según tu proyecto. Nos especializamos en Vitacura, Las Condes, La Reina, Lo Barnechea y Chicureo, más el sector poniente (Lampa, Ciudad de los Valles, Padre Hurtado).
+      - region [ref=f3e704]:
+        - generic [ref=f3e706]:
+          - heading "Partamos con una conversación" [level=2] [ref=f3e708]
+          - paragraph [ref=f3e710]: Cuéntanos qué proyecto tienes en mente. Te respondemos directo, sin intermediarios.
+          - link "Cotiza tu proyecto" [ref=f3e712] [cursor=pointer]:
+            - /url: "#cotiza"
+          - paragraph [ref=f3e714]: Arquitectura + Construcción · Santiago, Chile
+    - contentinfo [ref=f3e715]:
+      - generic [ref=f3e716]:
+        - generic [ref=f3e717]:
+          - generic [ref=f3e718]: Constructora P.G
+          - paragraph [ref=f3e721]: "Del plano a la entrega, sin intermediarios: diseño, construcción y mantención con un único responsable."
+        - navigation "Pie de página" [ref=f3e722]:
+          - paragraph [ref=f3e723]: Secciones
+          - list [ref=f3e724]:
+            - listitem [ref=f3e725]:
+              - link "Servicios" [ref=f3e726] [cursor=pointer]:
+                - /url: "#servicios"
+            - listitem [ref=f3e727]:
+              - link "Proyectos" [ref=f3e728] [cursor=pointer]:
+                - /url: "#proyectos"
+            - listitem [ref=f3e729]:
+              - link "Precios" [ref=f3e730] [cursor=pointer]:
+                - /url: "#precios"
+            - listitem [ref=f3e731]:
+              - link "Preguntas frecuentes" [ref=f3e732] [cursor=pointer]:
+                - /url: "#faq"
+        - generic [ref=f3e733]:
+          - paragraph [ref=f3e734]: En esta etapa
+          - list [ref=f3e735]:
+            - listitem [ref=f3e736]: Precios netos, en UF
+            - listitem [ref=f3e737]: Cuotas con Transbank
+            - listitem [ref=f3e738]: Fotografías de obra en camino
+      - generic [ref=f3e740]:
+        - paragraph [ref=f3e741]: © 2026 Constructora P.G · Santiago, Chile
+        - paragraph [ref=f3e742]: Del plano a la entrega
+  - button "Open Next.js Dev Tools" [ref=f3e748] [cursor=pointer]
+  - alert [ref=f3e752]
