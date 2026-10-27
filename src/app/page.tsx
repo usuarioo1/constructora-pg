@@ -18,9 +18,9 @@ const marqueeItems = [
 ];
 
 const quickFacts = [
-  "Quinchos 6–12 sem",
-  "Cocinas 6–10 sem",
-  "Remodelaciones 8–20 sem",
+  "Quinchos 5–8 sem",
+  "Cocinas 4–6 sem",
+  "Remodelaciones 5–10 sem",
   "Casas 12–18 meses",
   "Cuotas con Transbank",
   "Garantía 1 año en obras menores",
@@ -111,11 +111,11 @@ const prices = [
 const faqs: Qa[] = [
   {
     q: "¿Hacen solo diseño o también construyen?",
-    a: "Ambos. La mayoría de los proyectos integran diseño y obra bajo el mismo equipo; luego cada foto de la galería quedará asociada a su proyecto y a su alcance.",
+    a: "Ambos. La mayoría de los proyectos integran diseño y obra bajo el mismo equipo; luego cada foto de la galería quedará asociada a su proyecto y a su alcance. Por lo general construimos según el requerimiento del cliente y, si este requiere planos, los desarrollamos con nuestro staff de arquitectos.",
   },
   {
     q: "¿Cuánto demora cada obra?",
-    a: "Quinchos 6–12 semanas; cocinas 6–10; remodelaciones 8–20; casas 12–18 meses. El permiso municipal es variable: en el mejor caso parte a los 3 meses.",
+    a: "Quinchos 5–8 semanas; cocinas 4–6; remodelaciones 5–10; casas 12–18 meses. El permiso municipal es variable: en el mejor caso parte a los 3 meses.",
   },
   {
     q: "¿Cuánto cuesta?",
@@ -131,7 +131,7 @@ const faqs: Qa[] = [
   },
   {
     q: "¿Qué garantía tiene la obra?",
-    a: "En obras menores: 1 año. En las demás obras rige la garantía legal (Art. 18 LGUC): 3 años en terminaciones, 5 en instalaciones y 10 en estructura. Y si nos llamas después, seguimos respondiendo igual.",
+    a: "Por ley (Art. 18 LGUC): 3 años en terminaciones, 5 en instalaciones y 10 en estructura. Y nuestro compromiso no termina ahí: si nos llamas después de los 3 años, respondemos igual. Además, tenemos una garantía de 1 año para obras menores; para otros proyectos, la garantía se estipula en contrato.",
   },
   {
     q: "¿A qué comunas llegan?",
