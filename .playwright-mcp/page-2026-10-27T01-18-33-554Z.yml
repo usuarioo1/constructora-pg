@@ -1,0 +1,470 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation "Principal" [ref=e4]:
+        - link "Constructora P.G" [ref=e5] [cursor=pointer]:
+          - /url: "#top"
+        - generic [ref=e7]:
+          - link "Servicios" [ref=e8] [cursor=pointer]:
+            - /url: "#servicios"
+          - link "Cómo trabajamos" [ref=e9] [cursor=pointer]:
+            - /url: "#como"
+          - link "Proyectos" [ref=e10] [cursor=pointer]:
+            - /url: "#proyectos"
+          - link "Precios" [ref=e11] [cursor=pointer]:
+            - /url: "#precios"
+          - link "FAQ" [ref=e12] [cursor=pointer]:
+            - /url: "#faq"
+        - link "Cotiza" [ref=e13] [cursor=pointer]:
+          - /url: "#cotiza"
+    - main [ref=e14]:
+      - region [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]:
+            - heading "Tu proyecto, de principio a fin, con un solo equipo de confianza." [level=1] [ref=e19]
+            - paragraph [ref=e21]:
+              - text: Diseñamos, construimos y mantenemos tus espacios, con planos cuando el proyecto lo requiera,
+              - strong [ref=e22]: un solo responsable y sin intermediarios
+              - text: . Desde la primera idea hasta la entrega final, nos encargamos de todo para que tú disfrutes el resultado sin complicaciones.
+            - paragraph [ref=e24]: Precios claros en UF, pago en cuotas y garantía que te respalda más allá de la entrega.
+            - generic [ref=e25]:
+              - generic [ref=e26]:
+                - link "Cotiza tu proyecto" [ref=e27] [cursor=pointer]:
+                  - /url: "#cotiza"
+                - link "Ver proyectos" [ref=e28] [cursor=pointer]:
+                  - /url: "#proyectos"
+              - paragraph [ref=e30]: Tú imaginas el proyecto. Nosotros lo hacemos realidad.
+          - 'img "Plano axonométrico que se dibuja solo: el proyecto pasa de líneas a volumen azul" [ref=e32]':
+            - generic [ref=e48]:
+              - generic [ref=e49]: P-00 · PROYECTO INTEGRAL
+              - generic [ref=e50]: ESC 1:100 · SANTIAGO, CL
+              - generic [ref=e51]: CONSTRUCTORA P.G
+            - generic [ref=e52]:
+              - generic [ref=e53]: 12 000
+              - generic [ref=e54]: 5 600
+        - list [ref=e56]:
+          - listitem [ref=e57]: Quinchos 6–12 sem
+          - listitem [ref=e59]: Cocinas 6–10 sem
+          - listitem [ref=e61]: Remodelaciones 8–20 sem
+          - listitem [ref=e63]: Casas 12–18 meses
+          - listitem [ref=e65]: Cuotas con Transbank
+          - listitem [ref=e67]: Garantía 1 año en obras menores
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - generic [ref=e73]: Arquitectura y diseño
+            - generic [ref=e74]: ·
+          - generic [ref=e75]:
+            - generic [ref=e76]: Quinchos y terrazas
+            - generic [ref=e77]: ·
+          - generic [ref=e78]:
+            - generic [ref=e79]: Cocinas integrales
+            - generic [ref=e80]: ·
+          - generic [ref=e81]:
+            - generic [ref=e82]: Construcción de casas
+            - generic [ref=e83]: ·
+          - generic [ref=e84]:
+            - generic [ref=e85]: Remodelaciones
+            - generic [ref=e86]: ·
+          - generic [ref=e87]:
+            - generic [ref=e88]: Mantención
+            - generic [ref=e89]: ·
+          - generic [ref=e90]:
+            - generic [ref=e91]: Portones y accesos
+            - generic [ref=e92]: ·
+          - generic [ref=e93]:
+            - generic [ref=e94]: Precios reales en UF
+            - generic [ref=e95]: ·
+          - generic [ref=e96]:
+            - generic [ref=e97]: Cuotas con Transbank
+            - generic [ref=e98]: ·
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - generic [ref=e101]: Arquitectura y diseño
+            - generic [ref=e102]: ·
+          - generic [ref=e103]:
+            - generic [ref=e104]: Quinchos y terrazas
+            - generic [ref=e105]: ·
+          - generic [ref=e106]:
+            - generic [ref=e107]: Cocinas integrales
+            - generic [ref=e108]: ·
+          - generic [ref=e109]:
+            - generic [ref=e110]: Construcción de casas
+            - generic [ref=e111]: ·
+          - generic [ref=e112]:
+            - generic [ref=e113]: Remodelaciones
+            - generic [ref=e114]: ·
+          - generic [ref=e115]:
+            - generic [ref=e116]: Mantención
+            - generic [ref=e117]: ·
+          - generic [ref=e118]:
+            - generic [ref=e119]: Portones y accesos
+            - generic [ref=e120]: ·
+          - generic [ref=e121]:
+            - generic [ref=e122]: Precios reales en UF
+            - generic [ref=e123]: ·
+          - generic [ref=e124]:
+            - generic [ref=e125]: Cuotas con Transbank
+            - generic [ref=e126]: ·
+      - region [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - heading "Lo que hacemos, de punta a punta" [level=2] [ref=e131]
+            - paragraph [ref=e133]: "Cuatro familias de servicio bajo la misma firma: quién diseña tu proyecto es quien lo construye y quien responde por él después."
+          - generic [ref=e134]:
+            - article [ref=e136]:
+              - generic [ref=e137]: FAM-A
+              - generic [ref=e142]:
+                - heading "Arquitectura y diseño" [level=3] [ref=e143]
+                - paragraph [ref=e144]: Diseñamos espacios que se adaptan a tus ideas, necesidades y presupuesto. Te acompañamos desde la primera propuesta hasta la planificación del proyecto, con diagnóstico, diseño personalizado y planos constructivos cuando sean necesarios, además de apoyo en la gestión de permisos que correspondan. Todo planificado para construir con claridad, evitar imprevistos y lograr el resultado que imaginas.
+              - list [ref=e145]:
+                - listitem [ref=e146]: Casas nuevas
+                - listitem [ref=e147]: Ampliaciones
+                - listitem [ref=e148]: Remodelaciones integrales
+                - listitem [ref=e149]: Locales y oficinas
+                - listitem [ref=e150]: Consultoría
+            - article [ref=e152]:
+              - generic [ref=e153]: FAM-B
+              - generic [ref=e158]:
+                - heading "Construcción y obra" [level=3] [ref=e159]
+                - paragraph [ref=e160]: "El corazón del negocio: quinchos y terrazas, cocinas integrales, casas y todo lo que exige hormigón, estructura y terminación en obra."
+              - list [ref=e161]:
+                - listitem [ref=e162]: Quinchos y terrazas
+                - listitem [ref=e163]: Cocinas integrales
+                - listitem [ref=e164]: Obras menores y gruesa
+                - listitem [ref=e165]: Losas y radieres
+                - listitem [ref=e166]: Cobertizos y pérgolas
+            - article [ref=e168]:
+              - generic [ref=e169]: FAM-C
+              - generic [ref=e174]:
+                - heading "Reparación y mantención" [level=3] [ref=e175]
+                - paragraph [ref=e176]: "La casa y el local siempre en pie: pintura, cerámicas, instalaciones sanitarias y eléctricas con certificaciones, incluyendo emergencias."
+              - list [ref=e177]:
+                - listitem [ref=e178]: Pinturas
+                - listitem [ref=e179]: Cerámicas y porcelanatos
+                - listitem [ref=e180]: Gasfitería
+                - listitem [ref=e181]: Electricidad
+                - listitem [ref=e182]: Techumbres y canaletas
+                - listitem [ref=e183]: Carpintería
+            - article [ref=e185]:
+              - generic [ref=e186]: FAM-D
+              - generic [ref=e191]:
+                - heading "Seguridad y accesos" [level=3] [ref=e192]
+                - paragraph [ref=e193]: "Ven, identifícate y entra sin fricción: portones automáticos, control de accesos, cámaras y cierres, con soldadura estructural a medida."
+              - list [ref=e194]:
+                - listitem [ref=e195]: Portones automáticos
+                - listitem [ref=e196]: Control de accesos
+                - listitem [ref=e197]: Circuito de cámaras
+                - listitem [ref=e198]: Cierres perimetrales
+                - listitem [ref=e199]: Soldadura estructural
+      - region [ref=e200]:
+        - generic [ref=e202]:
+          - heading "Así evitamos errores en tu obra" [level=2] [ref=e204]
+          - list [ref=e207]:
+            - listitem [ref=e208]:
+              - generic [ref=e209]:
+                - paragraph [ref=e210]: "01"
+                - heading "Conversación" [level=3] [ref=e211]
+                - paragraph [ref=e212]: Nos cuentas qué proyecto tienes en mente. Sin formularios largos ni intermediarios.
+            - listitem [ref=e213]:
+              - generic [ref=e214]:
+                - paragraph [ref=e215]: "02"
+                - heading "Diseño y cotización" [level=3] [ref=e216]
+                - paragraph [ref=e217]: Diagnóstico para evitar errores antes de construir; diseño bajo arquitectura cuando el proyecto lo requiera (es opcional, no toda construcción la necesita) y presupuesto con costos propios de obra y cuotas opcionales.
+            - listitem [ref=e218]:
+              - generic [ref=e219]:
+                - paragraph [ref=e220]: "03"
+                - heading "Construcción" [level=3] [ref=e221]
+                - paragraph [ref=e222]: Ejecución con control técnico y supervisión en terreno; la gestión de permisos municipales se agrega según tu proyecto.
+            - listitem [ref=e223]:
+              - generic [ref=e224]:
+                - paragraph [ref=e225]: "04"
+                - heading "Entrega y garantía" [level=3] [ref=e226]
+                - paragraph [ref=e227]: "Plazos claros y sin sorpresas: garantía de 1 año en obras menores, con la garantía legal vigente en las demás obras."
+      - region [ref=e228]:
+        - generic [ref=e229]:
+          - generic [ref=e230]:
+            - heading "Acá irán los proyectos de las fotos que me enviaste" [level=2] [ref=e232]
+            - paragraph [ref=e234]: (Fotos de obra reales, ya organizadas por proyecto; me confirmas el detalle y las etiquetamos con nombre, programa y comuna.)
+          - list [ref=e236]:
+            - listitem [ref=e237]:
+              - article [ref=e238]:
+                - generic [ref=e239]:
+                  - generic [ref=e240]:
+                    - button "Ampliar Proyecto 1 — foto 1 de 6" [ref=e241]:
+                      - img "Proyecto 1 — foto 1 de 6" [ref=e242]
+                    - button "Ampliar Proyecto 1 — foto 2 de 6" [ref=e243]:
+                      - img "Proyecto 1 — foto 2 de 6" [ref=e244]
+                    - button "Ampliar Proyecto 1 — foto 3 de 6" [ref=e245]:
+                      - img "Proyecto 1 — foto 3 de 6" [ref=e246]
+                    - button "Ampliar Proyecto 1 — foto 4 de 6" [ref=e247]:
+                      - img "Proyecto 1 — foto 4 de 6" [ref=e248]
+                    - button "Ampliar Proyecto 1 — foto 5 de 6" [ref=e249]:
+                      - img "Proyecto 1 — foto 5 de 6" [ref=e250]
+                    - button "Ampliar Proyecto 1 — foto 6 de 6" [ref=e251]:
+                      - img "Proyecto 1 — foto 6 de 6" [ref=e252]
+                  - generic: "01"
+                  - generic: 01 / 06
+                - generic [ref=e253]:
+                  - paragraph [ref=e254]: Proyecto 1
+                  - generic [aria-hidden] [ref=e255]:
+                    - button [disabled] [ref=e256]
+                    - button [ref=e259]
+            - listitem [ref=e262]:
+              - article [ref=e263]:
+                - generic [ref=e264]:
+                  - generic [ref=e265]:
+                    - button "Ampliar Proyecto 2 — foto 1 de 5" [ref=e266]:
+                      - img "Proyecto 2 — foto 1 de 5" [ref=e267]
+                    - button "Ampliar Proyecto 2 — foto 2 de 5" [ref=e268]:
+                      - img "Proyecto 2 — foto 2 de 5" [ref=e269]
+                    - button "Ampliar Proyecto 2 — foto 3 de 5" [ref=e270]:
+                      - img "Proyecto 2 — foto 3 de 5" [ref=e271]
+                    - button "Ampliar Proyecto 2 — foto 4 de 5" [ref=e272]:
+                      - img "Proyecto 2 — foto 4 de 5" [ref=e273]
+                    - button "Ampliar Proyecto 2 — foto 5 de 5" [ref=e274]:
+                      - img "Proyecto 2 — foto 5 de 5" [ref=e275]
+                  - generic: "02"
+                  - generic: 01 / 05
+                - generic [ref=e276]:
+                  - paragraph [ref=e277]: Proyecto 2
+                  - generic [aria-hidden] [ref=e278]:
+                    - button [disabled] [ref=e279]
+                    - button [ref=e282]
+            - listitem [ref=e285]:
+              - article [ref=e286]:
+                - generic [ref=e287]:
+                  - generic [ref=e288]:
+                    - button "Ampliar Proyecto 3 — foto 1 de 4" [ref=e289]:
+                      - img "Proyecto 3 — foto 1 de 4" [ref=e290]
+                    - button "Ampliar Proyecto 3 — foto 2 de 4" [ref=e291]:
+                      - img "Proyecto 3 — foto 2 de 4" [ref=e292]
+                    - button "Ampliar Proyecto 3 — foto 3 de 4" [ref=e293]:
+                      - img "Proyecto 3 — foto 3 de 4" [ref=e294]
+                    - button "Ampliar Proyecto 3 — foto 4 de 4" [ref=e295]:
+                      - img "Proyecto 3 — foto 4 de 4" [ref=e296]
+                  - generic: "03"
+                  - generic: 01 / 04
+                - generic [ref=e297]:
+                  - paragraph [ref=e298]: Proyecto 3
+                  - generic [aria-hidden] [ref=e299]:
+                    - button [disabled] [ref=e300]
+                    - button [ref=e303]
+            - listitem [ref=e306]:
+              - article [ref=e307]:
+                - generic [ref=e308]:
+                  - generic [ref=e309]:
+                    - button "Ampliar Proyecto 4 — foto 1 de 4" [ref=e310]:
+                      - img "Proyecto 4 — foto 1 de 4" [ref=e311]
+                    - button "Ampliar Proyecto 4 — foto 2 de 4" [ref=e312]:
+                      - img "Proyecto 4 — foto 2 de 4" [ref=e313]
+                    - button "Ampliar Proyecto 4 — foto 3 de 4" [ref=e314]:
+                      - img "Proyecto 4 — foto 3 de 4" [ref=e315]
+                    - button "Ampliar Proyecto 4 — foto 4 de 4" [ref=e316]:
+                      - img "Proyecto 4 — foto 4 de 4" [ref=e317]
+                  - generic: "04"
+                  - generic: 01 / 04
+                - generic [ref=e318]:
+                  - paragraph [ref=e319]: Proyecto 4
+                  - generic [aria-hidden] [ref=e320]:
+                    - button [disabled] [ref=e321]
+                    - button [ref=e324]
+            - listitem [ref=e327]:
+              - article [ref=e328]:
+                - generic [ref=e329]:
+                  - generic [ref=e330]:
+                    - button "Ampliar Proyecto 5 — foto 1 de 2" [ref=e331]:
+                      - img "Proyecto 5 — foto 1 de 2" [ref=e332]
+                    - button "Ampliar Proyecto 5 — foto 2 de 2" [ref=e333]:
+                      - img "Proyecto 5 — foto 2 de 2" [ref=e334]
+                  - generic: "05"
+                  - generic: 01 / 02
+                - generic [ref=e335]:
+                  - paragraph [ref=e336]: Proyecto 5
+                  - generic [aria-hidden] [ref=e337]:
+                    - button [disabled] [ref=e338]
+                    - button [ref=e341]
+            - listitem [ref=e344]:
+              - article [ref=e345]:
+                - generic [ref=e346]:
+                  - generic [ref=e347]:
+                    - button "Ampliar Proyecto 6 — foto 1 de 4" [ref=e348]:
+                      - img "Proyecto 6 — foto 1 de 4" [ref=e349]
+                    - button "Ampliar Proyecto 6 — foto 2 de 4" [ref=e350]:
+                      - img "Proyecto 6 — foto 2 de 4" [ref=e351]
+                    - button "Ampliar Proyecto 6 — foto 3 de 4" [ref=e352]:
+                      - img "Proyecto 6 — foto 3 de 4" [ref=e353]
+                    - button "Ampliar Proyecto 6 — foto 4 de 4" [ref=e354]:
+                      - img "Proyecto 6 — foto 4 de 4" [ref=e355]
+                  - generic: "06"
+                  - generic: 01 / 04
+                - generic [ref=e356]:
+                  - paragraph [ref=e357]: Proyecto 6
+                  - generic [aria-hidden] [ref=e358]:
+                    - button [disabled] [ref=e359]
+                    - button [ref=e362]
+            - listitem [ref=e365]:
+              - article [ref=e366]:
+                - generic [ref=e367]:
+                  - generic [ref=e368]:
+                    - button "Ampliar Proyecto 7 — foto 1 de 4" [ref=e369]:
+                      - img "Proyecto 7 — foto 1 de 4" [ref=e370]
+                    - button "Ampliar Proyecto 7 — foto 2 de 4" [ref=e371]:
+                      - img "Proyecto 7 — foto 2 de 4" [ref=e372]
+                    - button "Ampliar Proyecto 7 — foto 3 de 4" [ref=e373]:
+                      - img "Proyecto 7 — foto 3 de 4" [ref=e374]
+                    - button "Ampliar Proyecto 7 — foto 4 de 4" [ref=e375]:
+                      - img "Proyecto 7 — foto 4 de 4" [ref=e376]
+                  - generic: "07"
+                  - generic: 01 / 04
+                - generic [ref=e377]:
+                  - paragraph [ref=e378]: Proyecto 7
+                  - generic [aria-hidden] [ref=e379]:
+                    - button [disabled] [ref=e380]
+                    - button [ref=e383]
+            - listitem [ref=e386]:
+              - article [ref=e387]:
+                - generic [ref=e388]:
+                  - generic [ref=e389]:
+                    - button "Ampliar Proyecto 8 — foto 1 de 7" [ref=e390]:
+                      - img "Proyecto 8 — foto 1 de 7" [ref=e391]
+                    - button "Ampliar Proyecto 8 — foto 2 de 7" [ref=e392]:
+                      - img "Proyecto 8 — foto 2 de 7" [ref=e393]
+                    - button "Ampliar Proyecto 8 — foto 3 de 7" [ref=e394]:
+                      - img "Proyecto 8 — foto 3 de 7" [ref=e395]
+                    - button "Ampliar Proyecto 8 — foto 4 de 7" [ref=e396]:
+                      - img "Proyecto 8 — foto 4 de 7" [ref=e397]
+                    - button "Ampliar Proyecto 8 — foto 5 de 7" [ref=e398]:
+                      - img "Proyecto 8 — foto 5 de 7" [ref=e399]
+                    - button "Ampliar Proyecto 8 — foto 6 de 7" [ref=e400]:
+                      - img "Proyecto 8 — foto 6 de 7" [ref=e401]
+                    - button "Ampliar Proyecto 8 — foto 7 de 7" [ref=e402]:
+                      - img "Proyecto 8 — foto 7 de 7" [ref=e403]
+                  - generic: "08"
+                  - generic: 01 / 07
+                - generic [ref=e404]:
+                  - paragraph [ref=e405]: Proyecto 8
+                  - generic [aria-hidden] [ref=e406]:
+                    - button [disabled] [ref=e407]
+                    - button [ref=e410]
+      - region [ref=e413]:
+        - generic [ref=e414]:
+          - generic [ref=e415]:
+            - heading "Precios de referencia, en UF" [level=2] [ref=e417]
+            - paragraph [ref=e419]: "Publicamos el rango real de cada obra: la transparencia es el estándar de la casa. El valor final se fija en la cotización según los antecedentes de tu proyecto."
+          - table [ref=e422]:
+            - rowgroup [ref=e423]:
+              - row [ref=e424]:
+                - columnheader "Servicio" [ref=e425]
+                - columnheader "Desde" [ref=e426]
+                - columnheader "Detalle" [ref=e427]
+            - rowgroup [ref=e428]:
+              - row [ref=e429]:
+                - cell "Quincho estándar" [ref=e430]
+                - cell "20–25 UF/m²" [ref=e431]
+                - cell "Llave en mano; sobre terraza existente, desde 200 UF. 20 m² ≈ 400 UF." [ref=e432]
+              - row [ref=e433]:
+                - cell "Quincho nivel alto" [ref=e434]
+                - cell "40 UF/m²" [ref=e435]
+                - cell "Con cerramientos y muebles de parrilla; 20 m² ≈ 800 UF." [ref=e436]
+              - row [ref=e437]:
+                - cell "Remodelación de cocina" [ref=e438]
+                - cell "150–300 UF" [ref=e439]
+                - cell "Sólo mobiliario; integral desde 200 UF, hasta 1.200 UF según alcance." [ref=e440]
+              - row [ref=e441]:
+                - cell "Construcción de casa" [ref=e442]
+                - cell "25–40 UF/m²" [ref=e443]
+                - cell "Panel 25 · albañilería confinada 30–32 · hormigón armado 38–40." [ref=e444]
+              - row [ref=e445]:
+                - cell "Habilitación de oficina" [ref=e446]
+                - cell "6–8 UF/m²" [ref=e447]
+                - cell "Básico; completo con mobiliario y redes, desde 15 UF/m²." [ref=e448]
+              - row [ref=e449]:
+                - cell "Diseño de arquitectura" [ref=e450]
+                - cell "1 UF/m²" [ref=e451]
+                - cell "Trámite municipal aparte, desde 30 UF por proceso." [ref=e452]
+              - row [ref=e453]:
+                - cell "Mantención y reparaciones" [ref=e454]
+                - cell "A cotizar" [ref=e455]
+                - cell "Cotización personalizada tras conversar tu proyecto." [ref=e456]
+          - paragraph [ref=e458]:
+            - text: Precios netos, en UF ·
+            - link "Solicita tu cotización" [ref=e459] [cursor=pointer]:
+              - /url: "#cotiza"
+      - region [ref=e460]:
+        - generic [ref=e462]:
+          - heading "Lo que preguntan antes de cotizar" [level=2] [ref=e464]
+          - generic [ref=e466]:
+            - generic [ref=e467]:
+              - heading [level=3] [ref=e468]:
+                - button "¿Hacen solo diseño o también construyen?" [expanded] [ref=e469]
+              - region "¿Hacen solo diseño o también construyen?" [ref=e473]:
+                - paragraph [ref=e475]: Ambos. La mayoría de los proyectos integran diseño y obra bajo el mismo equipo; luego cada foto de la galería quedará asociada a su proyecto y a su alcance.
+            - generic [ref=e476]:
+              - heading [level=3] [ref=e477]:
+                - button "¿Cuánto demora cada obra?" [ref=e478]
+              - region "¿Cuánto demora cada obra?":
+                - paragraph [ref=e483]: "Quinchos 6–12 semanas; cocinas 6–10; remodelaciones 8–20; casas 12–18 meses. El permiso municipal es variable: en el mejor caso parte a los 3 meses."
+            - generic [ref=e484]:
+              - heading [level=3] [ref=e485]:
+                - button "¿Cuánto cuesta?" [ref=e486]
+              - region "¿Cuánto cuesta?":
+                - paragraph [ref=e491]: Publicamos los precios de referencia en UF más arriba; el valor final se fija en la cotización sobre los antecedentes de tu proyecto.
+            - generic [ref=e492]:
+              - heading [level=3] [ref=e493]:
+                - button "¿Se puede pagar en cuotas?" [ref=e494]
+              - region "¿Se puede pagar en cuotas?":
+                - paragraph [ref=e499]: Sí. Todos los proyectos se pueden pagar en cuotas con Transbank, desde la cotización.
+            - generic [ref=e500]:
+              - heading [level=3] [ref=e501]:
+                - button "¿Se ocupan de los permisos?" [ref=e502]
+              - region "¿Se ocupan de los permisos?":
+                - paragraph [ref=e507]: "Cuando tu proyecto lo requiere, sí: gestionamos el permiso municipal completo. El trámite se cobra aparte, con un mínimo desde 30 UF por proceso."
+            - generic [ref=e508]:
+              - heading [level=3] [ref=e509]:
+                - button "¿Qué garantía tiene la obra?" [ref=e510]
+              - region "¿Qué garantía tiene la obra?":
+                - paragraph [ref=e515]: "En obras menores: 1 año. En las demás obras rige la garantía legal (Art. 18 LGUC): 3 años en terminaciones, 5 en instalaciones y 10 en estructura. Y si nos llamas después, seguimos respondiendo igual."
+            - generic [ref=e516]:
+              - heading [level=3] [ref=e517]:
+                - button "¿A qué comunas llegan?" [ref=e518]
+              - region "¿A qué comunas llegan?":
+                - paragraph [ref=e523]: Todo Santiago según tu proyecto. Nos especializamos en Vitacura, Las Condes, La Reina, Lo Barnechea y Chicureo, más el sector poniente (Lampa, Ciudad de los Valles, Padre Hurtado).
+      - region [ref=e524]:
+        - generic [ref=e526]:
+          - heading "Partamos con una conversación" [level=2] [ref=e528]
+          - paragraph [ref=e530]: Cuéntanos qué proyecto tienes en mente. Te respondemos directo, sin intermediarios.
+          - link "Cotiza tu proyecto" [ref=e532] [cursor=pointer]:
+            - /url: "#cotiza"
+          - paragraph [ref=e534]: Arquitectura + Construcción · Santiago, Chile
+    - contentinfo [ref=e535]:
+      - generic [ref=e536]:
+        - generic [ref=e537]:
+          - generic [ref=e538]: Constructora P.G
+          - paragraph [ref=e541]: "Del plano a la entrega, sin intermediarios: diseño, construcción y mantención con un único responsable."
+        - navigation "Pie de página" [ref=e542]:
+          - paragraph [ref=e543]: Secciones
+          - list [ref=e544]:
+            - listitem [ref=e545]:
+              - link "Servicios" [ref=e546] [cursor=pointer]:
+                - /url: "#servicios"
+            - listitem [ref=e547]:
+              - link "Proyectos" [ref=e548] [cursor=pointer]:
+                - /url: "#proyectos"
+            - listitem [ref=e549]:
+              - link "Precios" [ref=e550] [cursor=pointer]:
+                - /url: "#precios"
+            - listitem [ref=e551]:
+              - link "Preguntas frecuentes" [ref=e552] [cursor=pointer]:
+                - /url: "#faq"
+        - generic [ref=e553]:
+          - paragraph [ref=e554]: En esta etapa
+          - list [ref=e555]:
+            - listitem [ref=e556]: Precios netos, en UF
+            - listitem [ref=e557]: Cuotas con Transbank
+            - listitem [ref=e558]: Fotos de obra, organizadas por proyecto
+      - generic [ref=e560]:
+        - paragraph [ref=e561]: © 2026 Constructora P.G · Santiago, Chile
+        - paragraph [ref=e562]: Del plano a la entrega
+  - button "Open Next.js Dev Tools" [ref=e568] [cursor=pointer]
+  - alert [ref=e572]

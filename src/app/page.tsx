@@ -1,7 +1,9 @@
+import { readdirSync } from "node:fs";
+import { join } from "node:path";
 import Reveal from "./_components/Reveal";
 import Faq, { type Qa } from "./_components/Faq";
 import { PlanoHero, ServiceIcon } from "./_components/plano";
-import Carousel, { type CarouselSlide } from "./_components/Carousel";
+import ProjectsGrid, { type ProjectData } from "./_components/ProjectsGrid";
 
 const marqueeItems = [
   "Arquitectura y diseño",
@@ -21,7 +23,7 @@ const quickFacts = [
   "Remodelaciones 8–20 sem",
   "Casas 12–18 meses",
   "Cuotas con Transbank",
-  "Garantía 3/5/10 años",
+  "Garantía 1 año en obras menores",
 ];
 
 const families = [
@@ -29,7 +31,7 @@ const families = [
     code: "FAM-A",
     kind: "diseno",
     title: "Arquitectura y diseño",
-    desc: "Proyectos de autor listos para construirse, sin improvisación. Diagnóstico, anteproyecto, planimetría constructiva y permisos.",
+    desc: "Diseñamos espacios que se adaptan a tus ideas, necesidades y presupuesto. Te acompañamos desde la primera propuesta hasta la planificación del proyecto, con diagnóstico, diseño personalizado y planos constructivos cuando sean necesarios, además de apoyo en la gestión de permisos que correspondan. Todo planificado para construir con claridad, evitar imprevistos y lograr el resultado que imaginas.",
     tags: ["Casas nuevas", "Ampliaciones", "Remodelaciones integrales", "Locales y oficinas", "Consultoría"],
   },
   {
@@ -64,29 +66,37 @@ const stages = [
   {
     n: "02",
     title: "Diseño y cotización",
-    desc: "Diagnóstico para evitar errores antes de construir; presupuesto con costos propios de obra y cuotas opcionales.",
+    desc: "Diagnóstico para evitar errores antes de construir; diseño bajo arquitectura cuando el proyecto lo requiera (es opcional, no toda construcción la necesita) y presupuesto con costos propios de obra y cuotas opcionales.",
   },
   {
     n: "03",
     title: "Construcción",
-    desc: "Ejecución con control técnico, permisos municipales gestionados y supervisión en terreno.",
+    desc: "Ejecución con control técnico y supervisión en terreno; la gestión de permisos municipales se agrega según tu proyecto.",
   },
   {
     n: "04",
     title: "Entrega y garantía",
-    desc: "Plazos claros y sin sorpresas. La garantía legal (3/5/10 años) y nuestro propio compromiso de seguir respondiendo.",
+    desc: "Plazos claros y sin sorpresas: garantía de 1 año en obras menores, con la garantía legal vigente en las demás obras.",
   },
 ];
 
-const projects: CarouselSlide[] = Array.from({ length: 38 }, (_, i) => {
-  const n = String(i + 1).padStart(2, "0");
-  return {
-    n: `L-${n}`,
-    name: "Obra en terreno",
-    tag: "Foto real",
-    src: `/obras/obra-${n}.jpg`,
-  };
-});
+function readProjects(): ProjectData[] {
+  const base = join(process.cwd(), "public", "proyectos");
+  return readdirSync(base)
+    .filter((dir) => !dir.startsWith("."))
+    .sort()
+    .map((dir, i) => {
+      const photos = readdirSync(join(base, dir))
+        .filter((f) => !f.startsWith(".") && /\.(jpe?g|png)$/i.test(f))
+        .sort()
+        .map((f) => `/proyectos/${dir}/${f}`);
+      if (photos.length === 0) return null;
+      return { title: `Proyecto ${i + 1}`, photos };
+    })
+    .filter((p): p is ProjectData => p !== null);
+}
+
+const projects = readProjects();
 
 const prices = [
   { service: "Quincho estándar", from: "20–25 UF/m²", note: "Llave en mano; sobre terraza existente, desde 200 UF. 20 m² ≈ 400 UF.", flag: true },
@@ -117,11 +127,11 @@ const faqs: Qa[] = [
   },
   {
     q: "¿Se ocupan de los permisos?",
-    a: "Sí, gestionamos el permiso municipal completo. El trámite se cobra aparte, con un mínimo desde 30 UF por proceso.",
+    a: "Cuando tu proyecto lo requiere, sí: gestionamos el permiso municipal completo. El trámite se cobra aparte, con un mínimo desde 30 UF por proceso.",
   },
   {
     q: "¿Qué garantía tiene la obra?",
-    a: "Por ley (Art. 18 LGUC): 3 años en terminaciones, 5 en instalaciones y 10 en estructura. Y nuestro compromiso no termina ahí: si nos llamas después de los 3 años, respondemos igual.",
+    a: "En obras menores: 1 año. En las demás obras rige la garantía legal (Art. 18 LGUC): 3 años en terminaciones, 5 en instalaciones y 10 en estructura. Y si nos llamas después, seguimos respondiendo igual.",
   },
   {
     q: "¿A qué comunas llegan?",
@@ -172,28 +182,28 @@ export default function Home() {
         <section aria-labelledby="hero-title" className="relative overflow-hidden">
           <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-5 pt-14 pb-10 md:px-8 lg:grid-cols-12 lg:gap-6 lg:pt-20">
             <div className="lg:col-span-7">
-              <h1
-                id="hero-title"
-                className="font-display text-[clamp(3.2rem,7.4vw,5.75rem)] leading-[0.94] font-bold tracking-[-0.02em] uppercase"
-              >
-                <Reveal delay={0}>
-                  <span className="block">Plano.</span>
-                </Reveal>
-                <Reveal delay={110}>
-                  <span className="block">Obra.</span>
-                </Reveal>
-                <Reveal delay={220}>
-                  <span className="block text-blue">Entrega.</span>
-                </Reveal>
-              </h1>
-              <Reveal delay={380}>
-                <p className="mt-7 max-w-[58ch] text-[17px] leading-relaxed text-graph md:text-lg">
-                  Arquitectura, construcción y mantención con un único responsable —{" "}
-                  <strong className="font-semibold text-ink">del plano a la entrega, sin intermediarios</strong>.
-                  Precios reales publicados en UF, pago en cuotas y garantía que no termina con la entrega.
+              <Reveal delay={0}>
+                <h1
+                  id="hero-title"
+                  className="max-w-[20ch] font-display text-[clamp(2.4rem,4.8vw,3.9rem)] leading-[1.05] font-bold tracking-[-0.015em]"
+                >
+                  Tu proyecto, de principio a fin, con <span className="text-blue">un solo equipo de confianza</span>.
+                </h1>
+              </Reveal>
+              <Reveal delay={180}>
+                <p className="mt-7 max-w-[60ch] text-[16.5px] leading-relaxed text-graph md:text-[17.5px]">
+                  Diseñamos, construimos y mantenemos tus espacios, con planos cuando el proyecto lo requiera,{" "}
+                  <strong className="font-semibold text-ink">un solo responsable y sin intermediarios</strong>. Desde la
+                  primera idea hasta la entrega final, nos encargamos de todo para que tú disfrutes el resultado sin
+                  complicaciones.
                 </p>
               </Reveal>
-              <Reveal delay={480}>
+              <Reveal delay={300}>
+                <p className="mt-4 max-w-[60ch] text-[16.5px] leading-relaxed font-semibold text-ink md:text-[17.5px]">
+                  Precios claros en UF, pago en cuotas y garantía que te respalda más allá de la entrega.
+                </p>
+              </Reveal>
+              <Reveal delay={420}>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
                   <a
                     href="#cotiza"
@@ -212,6 +222,9 @@ export default function Home() {
                     />
                   </a>
                 </div>
+                <p className="mt-9 font-display text-[clamp(1.25rem,1.9vw,1.65rem)] leading-snug font-bold text-ink">
+                  Tú imaginas el proyecto. <span className="text-blue">Nosotros lo hacemos realidad.</span>
+                </p>
               </Reveal>
             </div>
             <Reveal className="lg:col-span-5" delay={150}>
@@ -331,18 +344,18 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
               <Reveal className="lg:col-span-7">
                 <h2 id="proy-title" className="font-display text-[clamp(2rem,4.2vw,3.2rem)] leading-[1.04] font-bold tracking-[-0.015em]">
-                  Acá irán los proyectos de las fotos <span className="text-blue">que me enviaste</span>
+                  Proyectos que ya están <span className="text-blue">de pie</span>
                 </h2>
               </Reveal>
               <Reveal delay={120} className="lg:col-span-5">
                 <p className="max-w-[52ch] text-[15.5px] leading-relaxed text-graph lg:pb-2">
-                  (Fotografías reales de obra, aún sin clasificar; luego se etiquetarán por proyecto y comuna según me vayas confirmando el detalle.)
+                  Fotos reales de nuestras obras: recorre cada proyecto, amplía las imágenes y mira el detalle de cada ejecución.
                 </p>
               </Reveal>
             </div>
 
             <Reveal delay={150}>
-              <Carousel slides={projects} />
+              <ProjectsGrid projects={projects} />
             </Reveal>
           </div>
         </section>
@@ -485,7 +498,7 @@ export default function Home() {
             <ul className="mt-4 space-y-2.5 text-[14px] text-white/80">
               <li>Precios netos, en UF</li>
               <li>Cuotas con Transbank</li>
-              <li>Fotografías de obra en camino</li>
+              <li>Fotos de obra, organizadas por proyecto</li>
             </ul>
           </div>
         </div>
