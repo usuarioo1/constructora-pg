@@ -1,9 +1,12 @@
 import { readdirSync } from "node:fs";
 import { join } from "node:path";
+import Image from "next/image";
+import planos2Img from "./assets/planos2.webp";
 import Reveal from "./_components/Reveal";
 import Faq, { type Qa } from "./_components/Faq";
 import { PlanoHero, ServiceIcon } from "./_components/plano";
 import ProjectsGrid, { type ProjectData } from "./_components/ProjectsGrid";
+import WhatsAppButton from "./_components/WhatsAppButton";
 
 const marqueeItems = [
   "Arquitectura y diseño",
@@ -26,32 +29,32 @@ const quickFacts = [
   "Garantía 1 año en obras menores",
 ];
 
-const families = [
+const areas = [
   {
-    code: "FAM-A",
+    code: "ÁREA 01",
     kind: "diseno",
-    title: "Arquitectura y diseño",
+    title: "Arquitectura y Diseño",
     desc: "Diseñamos espacios que se adaptan a tus ideas, necesidades y presupuesto. Te acompañamos desde la primera propuesta hasta la planificación del proyecto, con diagnóstico, diseño personalizado y planos constructivos cuando sean necesarios, además de apoyo en la gestión de permisos que correspondan. Todo planificado para construir con claridad, evitar imprevistos y lograr el resultado que imaginas.",
     tags: ["Casas nuevas", "Ampliaciones", "Remodelaciones integrales", "Locales y oficinas", "Consultoría"],
   },
   {
-    code: "FAM-B",
+    code: "ÁREA 02",
     kind: "obra",
-    title: "Construcción y obra",
-    desc: "El corazón del negocio: quinchos y terrazas, cocinas integrales, casas y todo lo que exige hormigón, estructura y terminación en obra.",
+    title: "Construcción y Obra",
+    desc: "El corazón de la firma: quinchos y terrazas, cocinas integrales, casas y todo lo que exige hormigón, estructura y terminación en obra.",
     tags: ["Quinchos y terrazas", "Cocinas integrales", "Obras menores y gruesa", "Losas y radieres", "Cobertizos y pérgolas"],
   },
   {
-    code: "FAM-C",
+    code: "ÁREA 03",
     kind: "mantencion",
-    title: "Reparación y mantención",
+    title: "Reparación y Mantención",
     desc: "La casa y el local siempre en pie: pintura, cerámicas, instalaciones sanitarias y eléctricas con certificaciones, incluyendo emergencias.",
     tags: ["Pinturas", "Cerámicas y porcelanatos", "Gasfitería", "Electricidad", "Techumbres y canaletas", "Carpintería"],
   },
   {
-    code: "FAM-D",
+    code: "ÁREA 04",
     kind: "seguridad",
-    title: "Seguridad y accesos",
+    title: "Seguridad y Accesos",
     desc: "Ven, identifícate y entra sin fricción: portones automáticos, control de accesos, cámaras y cierres, con soldadura estructural a medida.",
     tags: ["Portones automáticos", "Control de accesos", "Circuito de cámaras", "Cierres perimetrales", "Soldadura estructural"],
   },
@@ -91,7 +94,7 @@ function readProjects(): ProjectData[] {
         .sort()
         .map((f) => `/proyectos/${dir}/${f}`);
       if (photos.length === 0) return null;
-      return { title: `Proyecto ${i + 1}`, photos };
+      return { title: "Proyecto", photos };
     })
     .filter((p): p is ProjectData => p !== null);
 }
@@ -140,6 +143,57 @@ const faqs: Qa[] = [
 ];
 
 export default function Home() {
+  const HERO = process.env.NEXT_PUBLIC_HERO === "1" ? 1 : 2;
+
+  const heroLeft = (
+    <div className="lg:col-span-6">
+      <Reveal delay={0}>
+        <h1
+          id="hero-title"
+          className="max-w-[20ch] font-display text-[clamp(2.4rem,4.8vw,3.9rem)] leading-[1.05] font-bold tracking-[-0.015em]"
+        >
+          Tu proyecto, de principio a fin, con <span className="text-blue">un solo equipo de confianza</span>.
+        </h1>
+      </Reveal>
+      <Reveal delay={180}>
+        <p className="mt-7 max-w-[60ch] text-[16.5px] leading-relaxed text-graph md:text-[17.5px]">
+          Diseñamos, construimos y mantenemos tus espacios, con planos cuando el proyecto lo requiera,{" "}
+          <strong className="font-semibold text-ink">un solo responsable y sin intermediarios</strong>. Desde la
+          primera idea hasta la entrega final, nos encargamos de todo para que tú disfrutes el resultado sin
+          complicaciones.
+        </p>
+      </Reveal>
+      <Reveal delay={300}>
+        <p className="mt-4 max-w-[60ch] text-[16.5px] leading-relaxed font-semibold text-ink md:text-[17.5px]">
+          Precios claros en UF, pago en cuotas y garantía que te respalda más allá de la entrega.
+        </p>
+      </Reveal>
+      <Reveal delay={420}>
+        <div className="mt-8 flex flex-wrap items-center gap-4">
+          <a
+            href="#cotiza"
+            className="border border-blue bg-blue px-6 py-3.5 font-display text-[15px] font-semibold tracking-[0.04em] text-white uppercase transition-colors hover:bg-ink hover:border-ink"
+          >
+            Cotiza tu proyecto
+          </a>
+          <a
+            href="#proyectos"
+            className="group flex items-center gap-2 font-display text-[15px] font-semibold tracking-[0.04em] text-ink uppercase"
+          >
+            Ver proyectos
+            <span
+              aria-hidden="true"
+              className="inline-block h-px w-6 bg-ink transition-all duration-300 group-hover:w-10 group-hover:bg-blue"
+            />
+          </a>
+        </div>
+        <p className="mt-9 font-display text-[clamp(1.25rem,1.9vw,1.65rem)] leading-snug font-bold text-ink">
+          Tú imaginas el proyecto. <span className="text-blue">Nosotros lo hacemos realidad.</span>
+        </p>
+      </Reveal>
+    </div>
+  );
+
   return (
     <div id="top" className="bg-paper text-ink">
       {/* ————— Nav ————— */}
@@ -180,58 +234,41 @@ export default function Home() {
       <main>
         {/* ————— Hero ————— */}
         <section aria-labelledby="hero-title" className="relative overflow-hidden">
-          <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-5 pt-14 pb-10 md:px-8 lg:grid-cols-12 lg:gap-6 lg:pt-20">
-            <div className="lg:col-span-7">
-              <Reveal delay={0}>
-                <h1
-                  id="hero-title"
-                  className="max-w-[20ch] font-display text-[clamp(2.4rem,4.8vw,3.9rem)] leading-[1.05] font-bold tracking-[-0.015em]"
-                >
-                  Tu proyecto, de principio a fin, con <span className="text-blue">un solo equipo de confianza</span>.
-                </h1>
-              </Reveal>
-              <Reveal delay={180}>
-                <p className="mt-7 max-w-[60ch] text-[16.5px] leading-relaxed text-graph md:text-[17.5px]">
-                  Diseñamos, construimos y mantenemos tus espacios, con planos cuando el proyecto lo requiera,{" "}
-                  <strong className="font-semibold text-ink">un solo responsable y sin intermediarios</strong>. Desde la
-                  primera idea hasta la entrega final, nos encargamos de todo para que tú disfrutes el resultado sin
-                  complicaciones.
-                </p>
-              </Reveal>
-              <Reveal delay={300}>
-                <p className="mt-4 max-w-[60ch] text-[16.5px] leading-relaxed font-semibold text-ink md:text-[17.5px]">
-                  Precios claros en UF, pago en cuotas y garantía que te respalda más allá de la entrega.
-                </p>
-              </Reveal>
-              <Reveal delay={420}>
-                <div className="mt-8 flex flex-wrap items-center gap-4">
-                  <a
-                    href="#cotiza"
-                    className="border border-blue bg-blue px-6 py-3.5 font-display text-[15px] font-semibold tracking-[0.04em] text-white uppercase transition-colors hover:bg-ink hover:border-ink"
-                  >
-                    Cotiza tu proyecto
-                  </a>
-                  <a
-                    href="#proyectos"
-                    className="group flex items-center gap-2 font-display text-[15px] font-semibold tracking-[0.04em] text-ink uppercase"
-                  >
-                    Ver proyectos
-                    <span
-                      aria-hidden="true"
-                      className="inline-block h-px w-6 bg-ink transition-all duration-300 group-hover:w-10 group-hover:bg-blue"
-                    />
-                  </a>
-                </div>
-                <p className="mt-9 font-display text-[clamp(1.25rem,1.9vw,1.65rem)] leading-snug font-bold text-ink">
-                  Tú imaginas el proyecto. <span className="text-blue">Nosotros lo hacemos realidad.</span>
-                </p>
-              </Reveal>
+          {HERO === 2 && (
+            <div aria-hidden="true" className="absolute inset-0 lg:left-auto lg:w-[58%] lg:right-[7%]">
+              <div className="foto-in relative h-full w-full [-webkit-mask-image:linear-gradient(90deg,transparent,black_38%,black_96%,transparent)] [mask-image:linear-gradient(90deg,transparent,black_38%,black_96%,transparent)]">
+                <Image
+                  src={planos2Img}
+                  alt=""
+                  fill
+                  priority
+                  unoptimized
+                  placeholder="blur"
+                  sizes="(min-width: 1024px) 58vw, 100vw"
+                  className="object-cover object-right"
+                />
+                <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-paper to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-paper to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-l from-transparent via-paper/45 to-paper/90 lg:via-paper/25 lg:to-paper/55" />
+              </div>
             </div>
-            <Reveal className="lg:col-span-5" delay={150}>
-              <PlanoHero className="w-full max-w-[520px] lg:max-w-none" />
-            </Reveal>
+          )}
+          <div
+            className={`relative mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-10 px-5 pt-14 pb-10 md:px-8 lg:grid-cols-12 lg:gap-6 lg:pt-20${HERO === 2 ? " lg:min-h-[560px]" : ""}`}
+          >
+            {heroLeft}
+            {HERO === 1 ? (
+              <Reveal
+                delay={150}
+                className="lg:col-span-6 [-webkit-mask-image:linear-gradient(90deg,transparent,black_30%)] [mask-image:linear-gradient(90deg,transparent,black_30%)]"
+              >
+                <PlanoHero className="w-full lg:w-[118%]" />
+              </Reveal>
+            ) : (
+              <div aria-hidden="true" className="hidden lg:col-span-6 lg:block" />
+            )}
           </div>
-          <div className="border-t border-ink/10">
+          <div className="relative border-t border-ink/10 bg-paper/85 lg:bg-paper/65">
             <ul className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-x-8 gap-y-2.5 px-5 py-4 md:px-8">
               {quickFacts.map((fact) => (
                 <li key={fact} className="flex items-center gap-2 font-display text-[11.5px] font-medium tracking-[0.1em] whitespace-nowrap text-graph uppercase">
@@ -268,35 +305,37 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
               <Reveal className="lg:col-span-7">
                 <h2 id="serv-title" className="font-display text-[clamp(2.2rem,4.6vw,3.5rem)] leading-[1.02] font-bold tracking-[-0.015em]">
-                  Lo que hacemos, <span className="text-blue">de punta a punta</span>
+                  4 Grandes, <span className="text-blue"> Áreas de servicio</span>
                 </h2>
               </Reveal>
               <Reveal delay={120} className="lg:col-span-5">
                 <p className="max-w-[52ch] text-[15.5px] leading-relaxed text-graph lg:pb-2">
-                  Cuatro familias de servicio bajo la misma firma: quién diseña tu proyecto es quien lo construye y quien responde por él después.
+                  Cuatro áreas de servicio bajo la misma firma: quien diseña tu proyecto es quien lo construye y quien responde por él después.
                 </p>
               </Reveal>
             </div>
 
-            <div className="mt-14 border-t border-ink/10">
-              {families.map((fam, i) => (
-                <Reveal key={fam.code} delay={i * 60}>
-                  <article className="group grid grid-cols-1 gap-x-8 gap-y-4 border-b border-ink/10 py-8 transition-colors duration-300 hover:bg-mist md:grid-cols-[80px_56px_1fr_1.15fr] md:py-9">
-                    <span className="font-display text-[12px] font-semibold tracking-[0.16em] text-ink/60 transition-colors group-hover:text-blue">
-                      {fam.code}
-                    </span>
-                    <span className="text-ink/70 transition-colors duration-300 group-hover:text-blue">
-                      <ServiceIcon kind={fam.kind} className="h-11 w-11" />
-                    </span>
-                    <div>
-                      <h3 className="font-display text-[19px] font-bold text-ink md:text-[21px]">{fam.title}</h3>
-                      <p className="mt-2 max-w-[48ch] text-[14.5px] leading-relaxed text-graph">{fam.desc}</p>
+            <div className="mt-14 grid gap-4 md:grid-cols-2 md:gap-5">
+              {areas.map((area, i) => (
+                <Reveal key={area.code} delay={i * 80}>
+                  <article className="group flex h-full flex-col border border-ink/12 bg-mist p-7 transition-colors duration-300 hover:border-blue md:p-9">
+                    <div className="flex items-start justify-between gap-4">
+                      <span className="pt-1 font-display text-[12px] font-semibold tracking-[0.16em] text-ink/60 transition-colors group-hover:text-blue">
+                        {area.code}
+                      </span>
+                      <span className="text-ink/70 transition-colors duration-300 group-hover:text-blue">
+                        <ServiceIcon kind={area.kind} className="h-12 w-12" />
+                      </span>
                     </div>
-                    <ul className="flex flex-wrap content-start gap-2">
-                      {fam.tags.map((tag) => (
+                    <h3 className="mt-5 font-display text-[22px] font-bold tracking-[-0.01em] text-ink md:text-[26px]">
+                      {area.title}
+                    </h3>
+                    <p className="mt-3 max-w-[52ch] text-[15px] leading-relaxed text-graph">{area.desc}</p>
+                    <ul className="mt-auto flex flex-wrap content-start gap-2 pt-7">
+                      {area.tags.map((tag) => (
                         <li
                           key={tag}
-                          className="border border-ink/15 px-2.5 py-1 text-[12px] font-medium text-graph transition-colors duration-300 group-hover:border-blue/40 group-hover:text-ink"
+                          className="border border-ink/15 bg-paper px-2.5 py-1 text-[12px] font-medium text-graph transition-colors duration-300 group-hover:border-blue/40 group-hover:text-ink"
                         >
                           {tag}
                         </li>
@@ -509,6 +548,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <WhatsAppButton />
     </div>
   );
 }

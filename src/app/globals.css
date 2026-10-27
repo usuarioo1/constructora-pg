@@ -92,6 +92,22 @@ body {
   to { opacity: 1; transform: scaleY(1); }
 }
 
+@keyframes plano-float {
+  from { transform: translateY(-7px); }
+  to { transform: translateY(7px); }
+}
+.plano-float {
+  animation: plano-float 9s ease-in-out infinite alternate;
+}
+
+@keyframes foto-in {
+  from { opacity: 0; transform: translateX(28px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.foto-in {
+  animation: foto-in 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
 /* ——— Marquee de servicios ——— */
 .marquee-track {
   display: flex;
@@ -155,6 +171,12 @@ body {
     transform: none;
   }
   .marquee-track {
+    animation: none;
+  }
+  .plano-float {
+    animation: none;
+  }
+  .foto-in {
     animation: none;
   }
   .reveal-armed,

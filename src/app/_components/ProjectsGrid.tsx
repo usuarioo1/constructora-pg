@@ -21,10 +21,41 @@ function ProjectCard({
   const trackRef = useRef<HTMLDivElement>(null);
   const [idx, setIdx] = useState(0);
   const total = project.photos.length;
+  const drag = useRef<{ startX: number; scrollStart: number; moved: boolean } | null>(null);
   const prefersReduce = useCallback(
     () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     [],
   );
+
+  const onPointerDown = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    if (e.pointerType === "touch") return;
+    const track = trackRef.current;
+    if (!track) return;
+    drag.current = { startX: e.clientX, scrollStart: track.scrollLeft, moved: false };
+    track.setPointerCapture(e.pointerId);
+  }, []);
+
+  const onPointerMove = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    const track = trackRef.current;
+    if (!track || !drag.current) return;
+    const dx = e.clientX - drag.current.startX;
+    if (Math.abs(dx) > 6) drag.current.moved = true;
+    track.scrollLeft = drag.current.scrollStart - dx;
+  }, []);
+
+  const onPointerEnd = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    trackRef.current?.releasePointerCapture(e.pointerId);
+    window.setTimeout(() => {
+      drag.current = null;
+    }, 0);
+  }, []);
+
+  const onClickCapture = useCallback((e: React.MouseEvent) => {
+    if (drag.current?.moved) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  }, []);
 
   const goTo = useCallback(
     (next: number) => {
@@ -61,7 +92,12 @@ function ProjectCard({
         <div
           ref={trackRef}
           onScroll={onScroll}
-          className="no-scrollbar flex h-full w-full snap-x snap-mandatory overflow-x-auto scroll-smooth"
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={onPointerEnd}
+          onPointerCancel={onPointerEnd}
+          onClickCapture={onClickCapture}
+          className="no-scrollbar flex h-full w-full cursor-grab snap-x snap-mandatory select-none overflow-x-auto scroll-smooth active:cursor-grabbing"
         >
           {project.photos.map((src, i) => (
             <button
@@ -77,20 +113,12 @@ function ProjectCard({
                 fill
                 sizes="(min-width: 1024px) 30vw, (min-width: 640px) 46vw, 88vw"
                 priority={pIndex === 0 && i === 0}
+                draggable={false}
                 className="object-cover transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.02]"
               />
             </button>
           ))}
         </div>
-        <span className="pointer-events-none absolute top-3 left-4 bg-ink/85 px-2 py-0.5 font-display text-[11px] font-bold tracking-[0.16em] text-white uppercase">
-          {String(pIndex + 1).padStart(2, "0")}
-        </span>
-        <span
-          className="pointer-events-none absolute right-4 bottom-3 bg-ink/85 px-2 py-0.5 font-display text-[11px] font-semibold tracking-[0.14em] text-white tabular-nums"
-          aria-live="polite"
-        >
-          {String(idx + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
-        </span>
       </div>
       <div className="flex items-center justify-between gap-3 p-4">
         <p className="font-display text-[15.5px] leading-tight font-bold text-ink">{project.title}</p>
@@ -151,7 +179,7 @@ export default function ProjectsGrid({ projects }: { projects: ProjectData[] }) 
     <>
       <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((pr, pi) => (
-          <li key={pr.title} className="list-none">
+          <li key={pi} className="list-none">
             <ProjectCard project={pr} pIndex={pi} onOpen={(p, i) => setOpen({ p, i })} />
           </li>
         ))}
