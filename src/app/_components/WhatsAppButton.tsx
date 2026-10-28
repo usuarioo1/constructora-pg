@@ -1,4 +1,4 @@
-const PHONE = "56900000000";
+const PHONE = "56964393821";
 const MESSAGE = "Hola, acabo de ver su sitio web y me gustaría hacer unas consultas.";
 
 export default function WhatsAppButton() {

@@ -7,6 +7,7 @@ import Faq, { type Qa } from "./_components/Faq";
 import { PlanoHero, ServiceIcon } from "./_components/plano";
 import ProjectsGrid, { type ProjectData } from "./_components/ProjectsGrid";
 import WhatsAppButton from "./_components/WhatsAppButton";
+import { siteConfig } from "./_lib/site";
 
 const marqueeItems = [
   "Arquitectura y diseño",
@@ -79,7 +80,7 @@ const stages = [
   {
     n: "04",
     title: "Entrega y garantía",
-    desc: "Plazos claros y sin sorpresas: garantía de 1 año en obras menores, con la garantía legal vigente en las demás obras.",
+    desc: "Plazos claros y sin sorpresas: garantía de 1 año para obras menores; en los demás proyectos, la garantía se estipula en contrato.",
   },
 ];
 
@@ -102,19 +103,21 @@ function readProjects(): ProjectData[] {
 const projects = readProjects();
 
 const prices = [
-  { service: "Quincho estándar", from: "20–25 UF/m²", note: "Llave en mano; sobre terraza existente, desde 200 UF. 20 m² ≈ 400 UF.", flag: true },
-  { service: "Quincho nivel alto", from: "40 UF/m²", note: "Con cerramientos y muebles de parrilla; 20 m² ≈ 800 UF.", flag: false },
-  { service: "Remodelación de cocina", from: "150–300 UF", note: "Sólo mobiliario; integral desde 200 UF, hasta 1.200 UF según alcance.", flag: true },
-  { service: "Construcción de casa", from: "25–40 UF/m²", note: "Panel 25 · albañilería confinada 30–32 · hormigón armado 38–40.", flag: false },
-  { service: "Habilitación de oficina", from: "6–8 UF/m²", note: "Básico; completo con mobiliario y redes, desde 15 UF/m².", flag: false },
-  { service: "Diseño de arquitectura", from: "1 UF/m²", note: "Trámite municipal aparte, desde 30 UF por proceso.", flag: false },
-  { service: "Mantención y reparaciones", from: "A cotizar", note: "Cotización personalizada tras conversar tu proyecto.", flag: false },
+  { service: "Construcción de quinchos", from: "8 UF/m²", note: "Construcción y habilitación de quinchos.", flag: true },
+  { service: "Ampliaciones", from: "9 UF/m²", note: "Nuevos espacios integrados a tu vivienda.", flag: true },
+  { service: "Construcción de piscinas", from: "19 UF/m²", note: "Proyectos de piscinas a medida.", flag: true },
+  { service: "Remodelación de cocinas", from: "A cotizar", note: "Cotización personalizada según tu proyecto.", flag: false },
+  { service: "Construcción de casas", from: "A cotizar", note: "Cotización personalizada según tu proyecto.", flag: false },
+  { service: "Habilitación de oficinas", from: "A cotizar", note: "Cotización personalizada según tu proyecto.", flag: false },
+  { service: "Diseño de arquitectura y planos", from: "A cotizar", note: "Cotización personalizada según tu proyecto.", flag: false },
+  { service: "Jardinería y paisajismo", from: "A cotizar", note: "Cotización personalizada según tu proyecto.", flag: false },
+  { service: "Mantención y reparaciones", from: "A cotizar", note: "Cotización personalizada según tu proyecto.", flag: false },
 ];
 
 const faqs: Qa[] = [
   {
     q: "¿Hacen solo diseño o también construyen?",
-    a: "Ambos. La mayoría de los proyectos integran diseño y obra bajo el mismo equipo; luego cada foto de la galería quedará asociada a su proyecto y a su alcance. Por lo general construimos según el requerimiento del cliente y, si este requiere planos, los desarrollamos con nuestro staff de arquitectos.",
+    a: "Ambos. La mayoría de los proyectos integran diseño y obra bajo el mismo equipo, y cada foto de la galería corresponde a un proyecto y a su alcance real. La construcción nace, por lo general, del requerimiento específico de cada cliente; y si tu proyecto necesita planos, los desarrollamos con nuestro staff de arquitectos.",
   },
   {
     q: "¿Cuánto demora cada obra?",
@@ -134,13 +137,94 @@ const faqs: Qa[] = [
   },
   {
     q: "¿Qué garantía tiene la obra?",
-    a: "Por ley (Art. 18 LGUC): 3 años en terminaciones, 5 en instalaciones y 10 en estructura. Y nuestro compromiso no termina ahí: si nos llamas después de los 3 años, respondemos igual. Además, tenemos una garantía de 1 año para obras menores; para otros proyectos, la garantía se estipula en contrato.",
+    a: "En obras menores, la garantía es de 1 año. Para los demás proyectos, la garantía se estipula en el contrato, según lo acordado en tu proyecto.",
   },
   {
     q: "¿A qué comunas llegan?",
     a: "Todo Santiago según tu proyecto. Nos especializamos en Vitacura, Las Condes, La Reina, Lo Barnechea y Chicureo, más el sector poniente (Lampa, Ciudad de los Valles, Padre Hurtado).",
   },
 ];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "GeneralContractor",
+      "@id": `${siteConfig.url}/#negocio`,
+      name: siteConfig.name,
+      url: siteConfig.url,
+      image: `${siteConfig.url}${siteConfig.logo}`,
+      logo: `${siteConfig.url}${siteConfig.logo}`,
+      description: siteConfig.description,
+      email: siteConfig.email,
+      telephone: siteConfig.phone,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Santiago",
+        addressRegion: "Región Metropolitana",
+        addressCountry: "CL",
+      },
+      areaServed: [
+        { "@type": "City", name: "Santiago" },
+        { "@type": "City", name: "Vitacura" },
+        { "@type": "City", name: "Las Condes" },
+        { "@type": "City", name: "La Reina" },
+        { "@type": "City", name: "Lo Barnechea" },
+        { "@type": "City", name: "Chicureo" },
+        { "@type": "City", name: "Lampa" },
+        { "@type": "City", name: "Padre Hurtado" },
+      ],
+      knowsAbout: [
+        "Quinchos y terrazas",
+        "Cocinas integrales",
+        "Construcción de casas",
+        "Remodelaciones",
+        "Mantención de viviendas",
+        "Portones automáticos",
+        "Control de accesos",
+      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Servicios",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Arquitectura y diseño" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Construcción y obra" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Reparación y mantención" },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name: "Seguridad y accesos" },
+          },
+        ],
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteConfig.url}/#web`,
+      url: siteConfig.url,
+      name: siteConfig.name,
+      inLanguage: "es-CL",
+      publisher: { "@id": `${siteConfig.url}/#negocio` },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${siteConfig.url}/#faq`,
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+  ],
+};
 
 export default function Home() {
   const HERO = process.env.NEXT_PUBLIC_HERO === "1" ? 1 : 2;
@@ -150,22 +234,23 @@ export default function Home() {
       <Reveal delay={0}>
         <h1
           id="hero-title"
-          className="max-w-[20ch] font-display text-[clamp(2.4rem,4.8vw,3.9rem)] leading-[1.05] font-bold tracking-[-0.015em]"
+          className="max-w-[22ch] font-display text-[clamp(2.4rem,4.8vw,3.9rem)] leading-[1.05] font-bold tracking-[-0.015em]"
         >
-          Tu proyecto, de principio a fin, con <span className="text-blue">un solo equipo de confianza</span>.
+          Constructora en Santiago: <span className="text-blue">quinchos, cocinas y remodelaciones</span>.
         </h1>
       </Reveal>
       <Reveal delay={180}>
         <p className="mt-7 max-w-[60ch] text-[16.5px] leading-relaxed text-graph md:text-[17.5px]">
-          Diseñamos, construimos y mantenemos tus espacios, con planos cuando el proyecto lo requiera,{" "}
-          <strong className="font-semibold text-ink">un solo responsable y sin intermediarios</strong>. Desde la
-          primera idea hasta la entrega final, nos encargamos de todo para que tú disfrutes el resultado sin
-          complicaciones.
+          Publicamos precios de referencia en UF para que puedas planificar tu proyecto con claridad desde el inicio.
+          En nuestros servicios de quinchos, ampliaciones y piscinas encontrarás valores referenciales por metro
+          cuadrado; los demás servicios se cotizan de manera personalizada, según las características, terminaciones y
+          alcance de cada obra.
         </p>
       </Reveal>
       <Reveal delay={300}>
         <p className="mt-4 max-w-[60ch] text-[16.5px] leading-relaxed font-semibold text-ink md:text-[17.5px]">
-          Precios claros en UF, pago en cuotas y garantía que te respalda más allá de la entrega.
+          <strong className="font-semibold text-ink">Sin sorpresas ni costos poco claros.</strong> Evaluamos tu
+          proyecto, definimos su alcance y te entregamos una cotización detallada antes de comenzar.
         </p>
       </Reveal>
       <Reveal delay={420}>
@@ -196,6 +281,10 @@ export default function Home() {
 
   return (
     <div id="top" className="bg-paper text-ink">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* ————— Nav ————— */}
       <header className="sticky top-0 z-50 border-b border-ink/10 bg-paper">
         <nav aria-label="Principal" className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-5 md:px-8">
@@ -421,7 +510,7 @@ export default function Home() {
                   <thead>
                     <tr className="border-b border-ink/25">
                       <th scope="col" className="pb-3 pr-6 font-display text-[11px] font-semibold tracking-[0.18em] text-graph uppercase">Servicio</th>
-                      <th scope="col" className="pb-3 pr-6 font-display text-[11px] font-semibold tracking-[0.18em] text-graph uppercase">Desde</th>
+                      <th scope="col" className="pb-3 pr-6 font-display text-[11px] font-semibold tracking-[0.18em] text-graph uppercase">Precio</th>
                       <th scope="col" className="hidden pb-3 font-display text-[11px] font-semibold tracking-[0.18em] text-graph uppercase md:table-cell">Detalle</th>
                     </tr>
                   </thead>
@@ -490,15 +579,39 @@ export default function Home() {
               </p>
             </Reveal>
             <Reveal delay={260}>
-              <a
-                href="#cotiza"
-                className="mt-10 inline-block bg-white px-7 py-4 font-display text-[15px] font-bold tracking-[0.04em] text-ink uppercase transition-colors hover:bg-ink hover:text-white"
-              >
-                Cotiza tu proyecto
-              </a>
+              <div className="mt-10 flex flex-wrap items-center gap-4">
+                <a
+                  href="https://wa.me/56964393821?text=Hola%2C%20acabo%20de%20ver%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20hacer%20unas%20consultas."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-white px-7 py-4 font-display text-[15px] font-bold tracking-[0.04em] text-ink uppercase transition-colors hover:bg-ink hover:text-white"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="h-5 w-5">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+                  </svg>
+                  Cotiza por WhatsApp
+                </a>
+                <a
+                  href="mailto:contacto@constructora-pg.cl?subject=Cotizaci%C3%B3n%20de%20proyecto&body=Hola%2C%20quiero%20cotizar%20un%20proyecto."
+                  className="inline-flex items-center gap-3 border border-white/60 px-7 py-4 font-display text-[15px] font-bold tracking-[0.04em] text-white uppercase transition-colors hover:bg-white hover:text-ink"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true" className="h-5 w-5">
+                    <rect x="3" y="5" width="18" height="14" />
+                    <path d="M3.5 6 L 12 13 L 20.5 6" />
+                  </svg>
+                  Prefiero un correo
+                </a>
+              </div>
             </Reveal>
             <Reveal delay={340}>
-              <p className="mt-10 font-display text-[12.5px] font-semibold tracking-[0.22em] text-white uppercase">
+              <p className="mt-6 font-display text-[13px] tracking-[0.14em] text-white/85 uppercase">
+                <a href="mailto:contacto@constructora-pg.cl?subject=Cotizaci%C3%B3n%20de%20proyecto" className="underline underline-offset-4 transition-colors hover:text-white">
+                  contacto@constructora-pg.cl
+                </a>
+              </p>
+            </Reveal>
+            <Reveal delay={420}>
+              <p className="mt-8 font-display text-[12.5px] font-semibold tracking-[0.22em] text-white uppercase">
                 Arquitectura + Construcción · Santiago, Chile
               </p>
             </Reveal>
@@ -521,6 +634,11 @@ export default function Home() {
             </div>
             <p className="mt-4 max-w-[44ch] text-[14.5px] leading-relaxed text-white/70">
               Del plano a la entrega, sin intermediarios: diseño, construcción y mantención con un único responsable.
+            </p>
+            <p className="mt-4 font-display text-[14px] font-semibold tracking-[0.1em] text-white/90">
+              <a href="mailto:contacto@constructora-pg.cl" className="underline underline-offset-4 transition-colors hover:text-white">
+                contacto@constructora-pg.cl
+              </a>
             </p>
           </div>
           <nav aria-label="Pie de página" className="md:col-span-3">

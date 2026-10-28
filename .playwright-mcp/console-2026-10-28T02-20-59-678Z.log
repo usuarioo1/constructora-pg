@@ -1,0 +1,2 @@
+[     161ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3457/pagina-inexistente:0
+[    3568ms] [WARNING] The resource http://localhost:3457/_next/static/media/1ccf8ef962b3f693-s.p.0gwn7w9k-i020.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3457/pagina-inexistente:0

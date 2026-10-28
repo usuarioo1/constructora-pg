@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Chakra_Petch, Archivo } from "next/font/google";
+import { siteConfig } from "./_lib/site";
 import "./globals.css";
 
 const chakra = Chakra_Petch({
@@ -15,19 +16,31 @@ const archivo = Archivo({
 });
 
 export const metadata: Metadata = {
-  title: "Constructora P.G — Arquitectura, construcción y mantención en Santiago",
-  description:
-    "Del plano a la entrega con un único responsable: quinchos y terrazas, cocinas integrales, casas y remodelaciones, mantención y accesos. Precios reales en UF, pago en cuotas y garantía que no termina con la entrega. Santiago, Chile.",
+  metadataBase: new URL(siteConfig.url),
+  title: siteConfig.title,
+  description: siteConfig.description,
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/brand/constructora_pg_icon.png",
   },
   openGraph: {
-    title: "Constructora P.G — Arquitectura, construcción y mantención en Santiago",
-    description:
-      "Del plano a la entrega, sin intermediarios. Precios reales publicados en UF, pago en cuotas con Transbank y garantía que no termina con la entrega.",
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
     locale: "es_CL",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
 };
 
 export default function RootLayout({

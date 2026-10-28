@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]: Constructora P.G
+    - main [ref=e6]:
+      - generic [ref=e7]:
+        - paragraph [ref=e8]: Error 404
+        - heading "Esta página no está en el plano." [level=1] [ref=e9]
+        - paragraph [ref=e10]: "La lámina que buscas no existe o cambió de dirección. Volvamos al proyecto: revisa los servicios, los precios en UF o partamos con una conversación."
+        - generic [ref=e11]:
+          - link "Volver al inicio" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - link "Cotiza por WhatsApp" [ref=e13] [cursor=pointer]:
+            - /url: https://wa.me/56964393821?text=Hola%2C%20acabo%20de%20ver%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20hacer%20unas%20consultas.
+    - contentinfo [ref=e15]:
+      - generic [ref=e16]:
+        - paragraph [ref=e17]: © 2026 Constructora P.G · Santiago, Chile
+        - paragraph [ref=e18]: Del plano a la entrega
+  - alert [ref=e19]

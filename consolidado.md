@@ -35,8 +35,8 @@ Casas nuevas, ampliaciones, remodelaciones integrales, locales comerciales, habi
 
 ### B. Construcción y obra *(en ambos — fusionar)*
 - Obras menores y obra gruesa, hormigón, losas y radieres
-- **Quinchos y terrazas** (negocio insignia: desde 200 UF sobre terraza existente, 6-12 semanas)
-- **Cocinas integrales** (desde 200 UF; 6-10 semanas)
+- **Quinchos y terrazas** (negocio insignia: desde 200 UF sobre terraza existente, 5-8 semanas)
+- **Cocinas integrales** (desde 200 UF; 4-6 semanas)
 - Cobertizos, galpones, logias, pérgolas, siding
 
 ### C. Reparación y mantención *(aporte Edificart)*
@@ -62,7 +62,7 @@ Banderas propuestas (cada una aparece una sola vez):
 |---|---|
 | Años de experiencia | +10 |
 | Proyectos entregados | +30 (no inventar más: sumar el conteo real de ambos solo si el cliente lo confirma) |
-| Semanas promedio de obra | 6-12 |
+| Semanas promedio de obra | 5-8 |
 | Pago | Cuotas disponibles con Transbank |
 
 ## 6. Portfolio curado (9 proyectos propuestos)
@@ -88,7 +88,7 @@ Mezclar lo mejor de ambos, 3 por familia:
 ## 8. FAQ final (7 preguntas — se eliminan los duplicados de garantía y comunas que se repetían en cada página)
 
 1. ¿Hacen solo diseño o también construyen? → Ambos: la mayoría de los proyectos integran diseño y obra bajo el mismo equipo; en el portafolio se indica el alcance de cada uno.
-2. ¿Cuánto demora cada obra? → Quinchos 6-12 semanas; cocinas 6-10; remodelaciones 8-20; casas 12-18 meses. Permisos municipales desde 3 meses (variable según comuna).
+2. ¿Cuánto demora cada obra? → Quinchos 5-8 semanas; cocinas 4-6; remodelaciones 5-10; casas 12-18 meses. Permisos municipales desde 3 meses (variable según comuna).
 3. ¿Cuánto cuesta? → Tabla pública de precios de referencia (§7); el valor final se cotiza tras la conversación inicial.
 4. ¿Se puede pagar en cuotas? → Sí, con Transbank.
 5. ¿Se ocupan de los permisos? → Sí, gestionamos el permiso completo; el trámite municipal se cobra aparte (desde 30 UF por proceso).

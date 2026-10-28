@@ -20,7 +20,7 @@ Diseño, construcción y mantención con un único responsable: «del plano a la
 
 ## Operating Context
 
-Chile (Santiago). Contenido en español de Chile. Precios en UF, netos. Garantía legal Art. 18 LGUC: 3 años terminaciones, 5 años instalaciones, 10 años estructura. El permiso municipal se gestiona dentro del servicio; el trámite se cobra aparte (desde 30 UF por proceso). Venta por WhatsApp primero; email para briefs y planos. Plazos reales: quinchos 6-12 semanas, cocinas 6-10, remodelaciones 8-20, casas 12-18 meses.
+Chile (Santiago). Contenido en español de Chile. Precios en UF, netos. Garantía legal Art. 18 LGUC: 3 años terminaciones, 5 años instalaciones, 10 años estructura. El permiso municipal se gestiona dentro del servicio; el trámite se cobra aparte (desde 30 UF por proceso). Venta por WhatsApp primero; email para briefs y planos. Plazos reales: quinchos 5-8 semanas, cocinas 4-6, remodelaciones 5-10, casas 12-18 meses.
 
 ## Capabilities and Constraints
 
